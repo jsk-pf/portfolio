@@ -36,10 +36,8 @@ function scrollGnb() {
 }
 
 var aboutAnimation = function () {
-  setTimeout(function () {
-    $(window).scroll(function () {
-      $('.about_con > dl').addClass('on');
-    });
+  $(window).scroll(function () {
+    $('.about_con > dl').addClass('on');
   });
 };
 
