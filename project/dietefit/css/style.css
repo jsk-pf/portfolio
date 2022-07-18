@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* @font-face {
+ font-family:'Nanum Barun Gothic Light';
+ font-style:normal;
+ src:url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+ src:url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+@font-face {
+ font-family:'Nanum Barun Gothic Bold';
+ font-style:normal;
+ font-weight:700;
+ src:url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+ src:url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+} */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section {margin:0;padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; font-family:'Nanum Barun Gothic Light', sans-serif; color:#000000;}
+input[type='button'], input[type='submit'], input[type='reset'], input[type='image'], button{cursor:pointer;}
+
+
+/* common */
+.container {min-width:1800px; max-width:1900px; margin:0 auto; height:5020px; position:relative;}
+.wrap {margin:0 auto;width:1226px;}
+.wrap:after {content:''; display:block; clear:both;}
+.skip {width:1px; height:1px; padding:0; border:0; margin:-1px; overflow:hidden; position:absolute; clip:rect(0 0 0 0);}
+.hide {text-indent:100%; white-space:nowrap; overflow:hidden;}
+a {text-decoration:none; color:#000000;}
+input[type='text'], textarea {box-sizing:border-box; font-size:20px; padding:5px; font-weight:normal; font-family:'Nanum Barun Gothic Light', sans-serif;}
+ul, ol {list-style:none;}
+
+/* layout */
+header, .diete_topbox, .diete_apkbox, .diete_slidebox, .diete_gallerybox, .diete_formbox, footer {background-repeat:no-repeat; background-position:top center; vertical-align:top;}
+
+/* quick menu */
+#quick_menu {position:absolute; right:2%; z-index:1001; display:inline-block; padding-top:80px;}
+#quick_menu img, #quick_menu span {display:block;}
+#quick_menu img {margin:0 auto 3px;}
+#quick_menu span {position:relative; color:#000000; font-size:12px; font-weight:600; text-align:center; vertical-align:middle; line-height:17px; font-family:'Nanum Barun Gothic Bold'}
+#quick_menu span:after {content:''; position:absolute;  bottom:4px; left:57px; background-image:url('../images/pc/quick_ico.png'); background-repeat:no-repeat; display:inline-block; width:12px; height:12px;}
+
+/* header */
+.diete_topbox {height:1096px; background-image:url('../images/pc/diete_bg01.jpg');}
+
+
+/* diete_apkbox */
+.diete_apkbox {height:936px; background-image:url('../images/pc/diete_bg02.jpg');}
+.apk_area {padding:700px 0 0 110px;}
+.down_area img{margin:0 0 20px 20px;}
+.homepage_btn {margin-left:109px;}
+
+
+/* diete_slidebox */
+.diete_slidebox {height:935px; max-height:935px; background-image:url('../images/pc/diete_bg03.jpg'); font-size:18px;}
+.slide_wrap {margin:0 auto;width:1800px;}
+.slide_wrap:after {content:''; display:block; clear:both;}
+#slide_title {padding-top:130px;color:#00746b; font-size:30px; text-align:center; margin-bottom:35px; }
+#slide_title span {color:#003f51; font-weight:900; font-family:'Nanum Barun Gothic Bold'}
+
+#slide_cont {margin-top:30px; line-height:30px; text-align:center; font-size:18px;}
+
+/* 슬라이드 width */
+.hi-slide {position:relative; width:1479px; height:535px; margin:0 auto;}
+.hi-slide .slide_next_btn, .hi-slide .slide_prev_btn { position:absolute; top:50%;line-height:80px; text-align:center; cursor:pointer;}
+.hi-slide .slide_prev_btn {left:-65px;}
+.hi-slide .slide_next_btn {right:-72px; }
+.hi-slide > ul { list-style:none; position:relative; width:1479px; height:535px; margin:0 auto; padding:0; }
+.hi-slide > ul > li { overflow:hidden; position:absolute; z-index:0; left:377px; top:146px;}
+.hi-slide > ul > li > img { width:100%; height:100%; }
+
+
+
+/* diete_gallerybox */
+.diete_gallerybox {height:936px; background-image:url('../images/pc/diete_bg04.jpg'); }
+
+  /* 전체영역 잡기*/
+.gallay_wrap {width:1800px; margin:0 auto; position:relative;padding-top:240px;}
+
+/* 갤러리 리스트 영역 */
+.gallery {max-width:1060px; height:530px; position:relative;margin:0 auto;}
+.gallery_popup {display:inline-block;}
+.gallery_popup .thumb {width:296px; height:216px; padding:12px; background-color:#fff;}
+.gallery_popup .thumb img {display:inline-block; width:296px; height:216px; max-width:296px; max-height:216px; vertical-align:middle;}
+.gallery_popup .thumb:nth-of-type(even) {margin-top:50px;}
+
+
+
+/* diete_formbox */
+.diete_recruitbox {height:936px; background-image:url('../images/pc/diete_bg05.jpg');}
+.diete_recruitbox .wrap {position:relative; height:100%;}
+.recruit_period {margin-top:269px; margin-left:72px; display:inline-block;background-color:#DBFD45; font-size:24px; color:#4e4e4e;}
+.recruit_period > span {padding-right:10px; font-weight:bold;}
+.recruit_form {position:absolute; top:314px; left:72px; border:5px solid #dbff14; box-sizing:border-box; width:570px; border-radius:7px; padding:10px 0 36px 36px; background-color:#fff;}
+.recruit_form input[type='text'] {border:1px solid #A8A8A8; height:44px;}
+.recruit_form > p {margin-top:26px;}
+.recruit_form label {font-size:24px; color:#00d36d; font-weight:bold; min-width:120px; margin-right:10px; display:inline-block; text-align:right;}
+#recruit_name, #recruit_sns {width:358px;}
+#recruit_phone input[type='text'] {width:101px;}
+#recruit_phone {max-width:358px;}
+#recruit_phone span {font-weight:600; width:27.5px; max-width:27.5px; color:#00d36d; display:inline-block; text-align:center;}
+#recruit_email input[type='text'] {width:152px;}
+#recruit_email span {font-weight:600; color:#838383; width:54px; max-width:54px; display:inline-block; text-align:center; }
+#recruit_story {width:358px; max-width:358px; height:110px; max-height:110px; resize:none; overflow-y:auto;}
+.form_align {vertical-align:top;}
+.apply_btn {position:absolute; bottom:55px; left:248px; }
+
+/* footer */
+.footer {height:147px; border-top:3px solid #DBFD45; padding-top:30px;}
+.footer_logo {margin-right:35px; vertical-align:top}
+.footer_cont {display:inline-block;}
+address {color:#7f7f7f; font-size:12px; line-height:21px; font-style:normal; font-weight:bold; letter-spacing:px;}
+.copyright  {color:#bdbdbd; font-size:11px; display:inline-block; margin-top:40px;}
+.call_number {color:#00293e; font-weight:bold; display:inline-block; padding-left:16px; border-left:7px solid #64C030;vertical-align:top; margin-left:460px;}
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{ position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); }
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; margin-top:20px; margin-right:23px;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+#cboxPrevious, #cboxNext {display: none;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic; border:12px solid #fff; }
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+#cboxOverlay{background-color:#fff; opacity:0.35;}
+#colorbox{outline:0;}
+#cboxPrevious, #cboxNext {display: none;}
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+#cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+#cboxClose{position:absolute; top:-20px; right:-15px; background:url(../images/pc/gallery_close_btn.png) no-repeat; width:43px; height:43px; text-indent:-9999px}
+
+

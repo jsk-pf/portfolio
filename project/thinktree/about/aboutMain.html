@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--[if IE 6]><html lang="ko" class="no-js old ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko" class="no-js old ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko" class="no-js old ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko" class="no-js modern ie9"><![endif]-->
+<!--[if !IE]><!-->
+<!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="../css/base.css" type="text/css"/>
+<!--<link rel="stylesheet" href="../css/nanumgothic.css" type="text/css"/>-->
+<link rel="stylesheet" href="../css/common.css" type="text/css" /> 
+<link rel="stylesheet" href="../css/layout.css" type="text/css" /> 
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" /> 
+<title>ThinkTree | AboutUs </title>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+			/* 상단 탭 하단 메뉴 활성화/비활성화 기능 */
+			$('.top_group_sub li').mouseover(function(){
+				$('.top_sub_bg').css('display','block');
+			});
+			
+			$('.top_sub_bg').mouseover(function(){
+				$('.top_sub_bg').css('display','block');
+			});
+			$('.top_sub_bg').mouseout(function(){
+				$('.top_sub_bg').css('display','none');
+			});
+	
+	
+	
+			$('.site_map').click(function(){
+				var maskHeight = $(document).height();  
+      			 var maskWidth = $(window).width();  
+				 
+				$('.pop_bg').css({'width':maskWidth,'height':maskHeight});  
+				$('.sitemap_area').css('display','block');
+				$('.pop_bg').css('display','block');
+
+			});
+			
+					
+			/* 레이어 팝업 닫기 버튼 기능 */
+			$(".close_btn").click(function(){
+				$('.sitemap_area').css('display','none');
+				$('.pop_bg').css('display','none');
+			});
+			
+			/* 레이어 팝업 활성화 시 배경 클릭 시 레이어팝업 닫힘 기능
+			$('.pop_bg').click(function(){
+				$('.sitemap_area').css('display','none');
+				$('.pop_bg').css('display','none');
+			}); */
+
+		/* footer 영역 selectbox 활성화 */
+		$(".lang_area").click(function(){
+			if($('.lang_list').is(":visible")){
+				$('.lang_list').slideUp(100);
+			}else{
+				$('.lang_list').slideDown(100);
+			}
+		});
+	});
+</script>
+<!-- c_wrap -->
+<div id="c_wrap">
+<!--wrap_sub -->
+<div id="wrap_sub">
+<!-- m_header -->
+<div id="header">
+    <!-- gnb - 현재 영역의 각 이미지에 대한 title 속성이 적용되었으므로 해당 부분이 레이아웃 구분 시 사용되어야 함-->	
+	<ul> 
+        <li class="logo"><a href="../index.html"><img src="../images/common/logo_gnb.png" alt="thinktree" title="ThinkTree"/></a></li>
+        <li>
+            <div class="top_group">
+                <ul class="top_group_sub">
+                    <li class="top_gnb01" title="About us"><a href="../about/aboutMain.html"></a></li>
+                    <li class="top_gnb02" title="Project"><a href="../project/projectMain.html"></a></li>
+                    <li class="top_gnb03" title="Services"><a href="../project/serviceMain.html"></a></li>
+                    <li class="top_gnb04" title="Notice&amp;News"><a href="../notice/noticeList.html"></a></li>
+                    <li class="top_gnb05" title="think People"><a href="../people/peopleMain.html"></a></li>
+                </ul>
+             <div class="top_sub_bg" style="display:none;" >
+            	<div class="menu_area">
+            	<ul class="top_depth1">
+                	<li><a href="../about/ceo.html">Ceo Message</a></li>
+                    <li><a href="../about/overview.html">Overview</a></li>
+                    <li><a href="../about/history.html">History</a></li>
+                    <li><a href="../about/organization.html">Organization</a></li>
+                    <li><a href="../about/annual.html">Annual Report</a></li>
+                    <li><a href="../about/overview.html">Award</a></li>
+                    <li><a href="../about/partner.html">Partner &amp; Client</a></li>
+                    <li><a href="../about/ci.html">CI</a></li>
+                    <li><a href="../about/location.html">Location</a></li>
+                </ul>
+                <ul class="top_depth2">
+                    <li><a href="../project/solution.html">Solution</a></li>
+                    <li><a href="../project/public.html">Public institution</a></li>
+                    <li><a href="../project/online.html">Online Service</a></li>
+                    <li><a href="../project/mobile.html">Mobile</a></li>
+                    <li><a href="../project/management.html">Management</a></li>
+                </ul>
+                <ul class="top_depth3">
+                    <li><a href="../services/service.html">Service</a></li>
+                    <li><a href="../services/platform.html">Platform</a></li>
+                    <li><a href="../services/product.html">Product</a></li>
+                </ul>
+                 <ul class="top_depth4">
+                    <li><a href="../notice/noticeList.html">Notice &amp; News</a></li>
+           			<li><a href="../notice/contact.html">Contact</a></li>
+                </ul>               
+                 <ul class="top_depth5">
+					<li><a href="../people/people.html">think People</a></li>
+                    <li><a href="../people/community.html">Community</a></li>
+                    <li><a href="../people/recruit.html">Recruit</a></li>
+                    <li><a href="../people/welfare.html">Welfare</a></li>
+                </ul>             
+               </div>
+            </div>
+            </div>
+        </li>     
+        <li class="top_com_btn">
+          	<a href="#"><img class="site_map" src="../images/common/btn_gnb_sitemap.png" alt="Sitemap" title="Sitemap"/></a>
+            <a href="../notice/contact.html"><img src="../images/common/btn_gnb_contact.png" alt="Contact" title="Contact"/></a>	
+            <a href="http://download.think-tree.com/" target="_blank"><img src="../images/common/btn_gnb_support.png" alt="Support" title="Support"/></a>
+        </li>
+    </ul>
+     <!-- //gnb - 현재 영역의 각 이미지에 대한 title 속성이 적용되었으므로 해당 부분이 레이아웃 구분 시 사용되어야 함-->	
+</div>
+<!-- // header -->
+
+<!-- container -->
+<div id="container">
+	<!-- aboutus_area1 -->
+	<div class="aboutus_area1">
+    	<!-- com_sub1 -->
+    	<div class="com_sub1">
+        	<ul>
+            	<li class="coms_img1">
+                	<img src="../images/about/submain_boximg01.jpg" alt=""/>
+                </li>
+                <li class="coms_img2"> 
+                	<a href="./ceo.html"><img src="../images/about/submain_label01.png" alt="ceo message"/></a>
+                </li>
+	             <li class="coms_txt1">
+                	ThinkTree는 가치혁신을 통해, 고객에게<br/> 최고의 e-Business Partner가 되기 위하여 <br/>끊임없이 노력하고 있습니다.
+                </li>
+            </ul>
+        </div>
+        <!-- //com_sub1 -->
+        <!-- com_sub1 -->
+         <div class="com_sub2" >
+        	<ul class="mgb10">
+            	<li class="menu_sub1">
+                	<p  class="menu_logo"><a href="./overview.html"><img src="../images/about/submain_label02.png" alt=""/></a></p>
+                    <p class="coms_txt1 mgr75">
+                   씽크트리의 주요 사업영역은..<br/>최적화된 모바일 솔루션,
+                    </p>
+                </li>
+                <li class="menu_sub2">
+               		<p class="menu_logo"><a href="./overview.html"><img src="../images/about/submain_label03.png" alt=""/></a></p>
+					   <p class="coms_txt1 mgr32">
+                       It has never been my object to record 
+                        my dreams, just to realize them.
+	                    </p>
+                </li>
+                <li class="menu_sub3">
+               	 <p class="menu_logo"><a href="./charter.html"><img src="../images/about/submain_label04.png" alt=""/></a></p>
+                 <p class="coms_txt1 mgr32">
+                  사람의 가치, 기업은 단순한 이윤<br/>
+                  추구의 도구가 아니다.
+                    </p>
+                </li>
+            </ul>
+            <ul class="menu_sub4">
+              <li class="history_logo"><a href="./history.html"><img src="../images/about/submain_history.png" alt=""/></a></li>
+               <li class="history_cont"> 강산이 변하기에 조금 모자란 시간, 한참이란 시간동안,찰나의 순간동안<br/>겪어온 수많은 시행착오와 성공의 발자취를 공개합니다.</li>
+            </ul>
+        </div>
+        <!-- cont_menu2 -->
+    </div>
+    <!-- //conteonts_area1 -->
+    <!-- conteonts_area2 -->
+    <div class="subc_area_m3" >
+    	<ul>
+        	<li class="mgr112">
+            	 <a href="./organization.html"><img src="../images/about/submain_label05.png" alt="organization"/></a>
+            </li>
+            <li class="mgr112">
+            	 <a href="./annual.html"><img src="../images/about/submain_label06.png" alt="annual report"/></a>
+            </li>
+             <li>
+            	 <a href="./partner.html"><img src="../images/about/submain_label07.png" alt="partner &amp; client"/></a>
+            </li>
+        </ul>
+    </div>
+    <!--// conteonts_area2 -->
+    <!-- conteonts_area3 -->
+    <div class="aboutus_area2">
+    	<ul class="menu_sub5" >
+        	<li class="ci_logo"><a href="./ci.html"><img src="../images/about/submain_label08.png" alt="ci"/></a></li>
+            <li class="ci_cont">씽크트리의 기본<br/> 모티브를 소개합니다</li>
+        </ul>
+        <ul class="menu_sub6">
+        	<li class="location_logo"><a href="./location.html"><img src="../images/about/submain_label09.png" alt="location"/></a></li>
+            <li class="location_cont">where is <br/>thinktree people?</li>
+        </ul>
+    </div>
+     <!--// conteonts_area3 -->
+     
+	<!-- sitemap 레이어 팝업 -->
+    <div class="sitemap_area" style="display:none;">
+		<div class="sitemap_menu" >
+            <ul class="site_depth">
+                <li class="site_title"><a href="../about/aboutMain.html">About us</a></li>
+                <li><a href="../about/ceo.html">Ceo Message</a></li>
+                <li><a href="../about/overview.html">Overview</a></li>
+                <li><a href="../about/history.html">History</a></li>
+                <li><a href="../about/organization.html">Organization</a></li>
+                <li><a href="../about/annual.html">Annual Report</a></li>
+                <li><a href="../about/overview.html">Award</a></li>
+                <li><a href="../about/partner.html">Partner &amp; Client</a></li>
+                <li><a href="../about/ci.html">CI</a></li>
+                <li><a href="../about/location.html">Location</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../project/projectMain.html">Project</a></li>
+                <li><a href="../project/solution.html">Solution</a></li>
+                <li><a href="../project/public.html">Public institution</a></li>
+                <li><a href="../project/online.html">Online Service</a></li>
+                <li><a href="../project/mobile.html">Mobile</a></li>
+                <li><a href="../project/management.html">Management</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../services/serviceMain.html">Services</a></li>
+                <li><a href="../services/service.html">Service</a></li>
+                <li><a href="../services/platform.html">Platform</a></li>
+                <li><a href="../services/product.html">Product</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../notice/noticeList.html">Notice &amp; News</a></li>
+                <li><a href="../notice/noticeList.html">Notice &amp; News</a></li>
+                <li><a href="../notice/contact.html">Contact</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../people/peopleMain.html">think People</a></li>
+                <li><a href="../people/people.html">think People</a></li>
+                <li><a href="../people/community.html">Community</a></li>
+                <li><a href="../people/recruit.html">Recruit</a></li>
+                <li><a href="../people/welfare.html">Welfare</a></li> 
+            </ul>
+		</div>
+    	<div class="sitemap_btn"><img class="close_btn" src="../images/common/btn_sitemap_close.png" alt="사이트맵 닫기 버튼"/></div>
+    </div>
+    <div class="pop_bg" style="display:none;"></div> <!--레이어 팝업 배경-->
+    <!-- //sitemap 레이어 팝업 -->
+</div>
+<p class="mgt55"><img src="../images/common/img_footline.png" alt=""/></p>  
+<!-- //container -->
+<!-- footer -->
+<div id="footer">
+	<ul>
+    	<li >
+        <img src="../images/common/logo_foot.png" class="mgr65" alt="하단 ThinkTree 로고이미지"/>
+        </li>
+        <li class="mgr20">
+        	<p>(121-904) 서울 특별시 마포구 성암로 189번지 중소기업DMC타워 17층 / TEL. 02-309-2900 / FAX. 02-3151-9199</p>
+        	<p>Copyright(C) 2005-2013 THINK TREE.All Rights Reserved.</p>
+        </li>        
+     </ul>	
+    <div class="lang_area">
+         <p>Language</p>
+         <ol class="lang_list" style="display:none;" >
+           <li><a href="#">Korean</a></li>
+           <li><a href="#">Japaness</a></li>
+           <li><a href="#">English</a></li>
+         </ol>
+    </div>
+</div>
+<!-- // footer -->
+</div>
+<!--//wrap_sub -->
+</div>
+<!--// c_wrap -->
+</body>
+</html>

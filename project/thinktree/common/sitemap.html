@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--[if IE 6]><html lang="ko" class="no-js old ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko" class="no-js old ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko" class="no-js old ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko" class="no-js modern ie9"><![endif]-->
+<!--[if !IE]><!-->
+<!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="../css/base.css" type="text/css"/>
+<!--<link rel="stylesheet" href="../css/nanumgothic.css" type="text/css"/>-->
+<link rel="stylesheet" href="../css/common.css" type="text/css"/> 
+<link rel="stylesheet" href="../css/layout.css" type="text/css"/> 
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" /> 
+<title>ThinkTree | Notice &amp; News</title>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+			
+		
+			/* 상단 탭 하단 메뉴 활성화/비활성화 기능 */
+			$('.top_group_sub li').mouseover(function(){
+				$('.top_sub_bg').css('display','block');
+			});
+			
+			$('.top_sub_bg').mouseover(function(){
+				$('.top_sub_bg').css('display','block');
+			});
+			$('.top_sub_bg').mouseout(function(){
+				$('.top_sub_bg').css('display','none');
+			});
+			
+			
+			/* 레이어팝업 활성화 기능 */
+			$('.site_map').click(function(){
+				var maskHeight = $(document).height();  
+      			 var maskWidth = $(window).width();  
+				 
+				$('.pop_bg').css({'width':maskWidth,'height':maskHeight});  
+				$('.sitemap_area').css('display','block');
+				$('.pop_bg').css('display','block');
+
+			});
+			
+			/* 레이어 팝업 닫기 버튼 기능 */
+			$(".close_btn").click(function(){
+				$('.sitemap_area').css('display','none');
+				$('.pop_bg').css('display','none');
+			});
+					
+			
+			/* 레이어 팝업 활성화 시 배경 클릭 시 레이어팝업 닫힘 기능
+			$('.pop_bg').click(function(){
+				$('.sitemap_area').css('display','none');
+				$('.pop_bg').css('display','none');
+			}); */
+		
+		/* footer 영역 selectbox 활성화 */ 
+			$(".lang_area").click(function(){
+				if($('.lang_list').is(":visible")){
+					$('.lang_list').slideUp(100);
+				}else{
+					$('.lang_list').slideDown(100);
+				}
+			});		
+	});
+</script>
+<!-- c_wrap -->
+<div id="c_wrap">
+<!--wrap_sub -->
+<div id="wrap_sub">
+<!-- header -->
+<div id="header">
+	<ul class="head_sub"> 
+        <li class="logo"><a href="../index.html"><img src="../images/common/logo_gnb.png" alt="thinktree"/></a></li>
+        <li>
+            <div class="top_group">
+                <ul class="top_group_sub">
+                    <li class="top_gnb01"><a href="../about/aboutMain.html"></a></li>
+                    <li class="top_gnb02"><a href="../project/projectMain.html"></a></li>
+                    <li class="top_gnb03"><a href="../project/serviceMain.html"></a></li>
+                    <li class="top_gnb04"><a href="../notice/noticeList.html"></a></li>
+                    <li class="top_gnb05"><a href="../people/peopleMain.html"></a></li>
+                </ul>
+            </div>
+            <div class="top_sub_bg" style="display:none;" >
+            	<div class="menu_area">
+            	<ul class="top_depth1">
+                	<li><a href="../about/ceo.html">Ceo Message</a></li>
+                    <li><a href="../about/overview.html">Overview</a></li>
+                    <li><a href="../about/history.html">History</a></li>
+                    <li><a href="../about/organization.html">Organization</a></li>
+                    <li><a href="../about/annual.html">Annual Report</a></li>
+                    <li><a href="../about/overview.html">Award</a></li>
+                    <li><a href="../about/partner.html">Partner &amp; Client</a></li>
+                    <li><a href="../about/ci.html">CI</a></li>
+                    <li><a href="../about/location.html">Location</a></li>
+                </ul>
+                <ul class="top_depth2">
+                    <li><a href="../project/solution.html">Solution</a></li>
+                    <li><a href="../project/public.html">Public institution</a></li>
+                    <li><a href="../project/online.html">Online Service</a></li>
+                    <li><a href="../project/mobile.html">Mobile</a></li>
+                    <li><a href="../project/management.html">Management</a></li>
+                </ul>
+                <ul class="top_depth3">
+                    <li><a href="../services/service.html">Service</a></li>
+                    <li><a href="../services/platform.html">Platform</a></li>
+                    <li><a href="../services/product.html">Product</a></li>
+                </ul>
+                 <ul class="top_depth4">
+                    <li><a href="../notice/noticeList.html">Notice &amp; News</a></li>
+           			<li><a href="../notice/contact.html">Contact</a></li>
+                </ul>               
+                 <ul class="top_depth5">
+					<li><a href="../people/people.html">think People</a></li>
+                    <li><a href="../people/community.html">Community</a></li>
+                    <li><a href="../people/recruit.html">Recruit</a></li>
+                    <li><a href="../people/welfare.html">Welfare</a></li>
+                </ul>             
+               </div>
+            </div>
+        </li>     
+        <li class="top_com_btn">
+            <a href="#"><img class="site_map" src="../images/common/btn_gnb_sitemap.png" alt="sitemap"/></a>
+            <a href="../notice/contact.html"><img src="../images/common/btn_gnb_contact.png" alt="contact"/></a>	
+            <a href="http://download.think-tree.com/"><img src="../images/common/btn_gnb_support.png" alt="support"/></a>
+        </li>
+    </ul>
+</div>
+<!-- // header -->
+
+<!-- container -->
+<div id="container">
+	<!-- sitemap 레이어 팝업 -->
+    <div class="sitemap_area" style="display:none;">
+		<div class="sitemap_menu" >
+            <ul class="site_depth">
+                <li class="site_title"><a href="../about/aboutMain.html">About us</a></li>
+                <li><a href="../about/ceo.html">Ceo Message</a></li>
+                <li><a href="../about/overview.html">Overview</a></li>
+                <li><a href="../about/history.html">History</a></li>
+                <li><a href="../about/organization.html">Organization</a></li>
+                <li><a href="../about/annual.html">Annual Report</a></li>
+                <li><a href="../about/overview.html">Award</a></li>
+                <li><a href="../about/partner.html">Partner &amp; Client</a></li>
+                <li><a href="../about/ci.html">CI</a></li>
+                <li><a href="../about/location.html">Location</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../project/projectMain.html">Project</a></li>
+                <li><a href="../project/solution.html">Solution</a></li>
+                <li><a href="../project/public.html">Public institution</a></li>
+                <li><a href="../project/online.html">Online Service</a></li>
+                <li><a href="../project/mobile.html">Mobile</a></li>
+                <li><a href="../project/management.html">Management</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../services/serviceMain.html">Services</a></li>
+                <li><a href="../services/service.html">Service</a></li>
+                <li><a href="../services/platform.html">Platform</a></li>
+                <li><a href="../services/product.html">Product</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../notice/noticeList.html">Notice &amp; News</a></li>
+                <li><a href="../notice/noticeList.html">Notice &amp; News</a></li>
+                <li><a href="../notice/contact.html">Contact</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="../people/peopleMain.html">think People</a></li>
+                <li><a href="../people/people.html">think People</a></li>
+                <li><a href="../people/community.html">Community</a></li>
+                <li><a href="../people/recruit.html">Recruit</a></li>
+                <li><a href="../people/welfare.html">Welfare</a></li> 
+            </ul>
+		</div>
+    	<div class="sitemap_btn"><img class="close_btn" src="../images/common/btn_sitemap_close.png" alt="사이트맵 닫기 버튼"/></div>
+    </div>
+    <div class="pop_bg" style="display:none;"></div> <!--레이어 팝업 배경-->
+    <!-- //sitemap 레이어 팝업 -->
+</div>
+<!-- // container -->
+
+
+
+<!-- footer -->
+<div id="footer">
+	<p><img src="../images/common/img_footline.png" alt=""/></p>
+	<ul>
+    	<li>
+        <img src="../images/common/logo_foot.png" class="mgr65" alt="하단 ThinkTree 로고이미지"/>
+        </li>
+        <li class="mgr20">
+        	<p>(121-904) 서울 특별시 마포구 성암로 189번지 중소기업DMC타워 17층 / TEL. 02-309-2900 / FAX. 02-3151-9199</p>
+        	<p>Copyright(C) 2005-2013 THINK TREE.All Rights Reserved.</p>
+        </li>        
+     </ul>	
+    <div class="lang_area">
+         <p>Language</p>
+         <ol class="lang_list" style="display:none;" >
+           <li><a href="#">Korean</a></li>
+           <li><a href="#">Japaness</a></li>
+           <li><a href="#">English</a></li>
+         </ol>
+    </div>
+</div>
+<!-- // footer -->
+</div>
+<!--//wrap_sub -->
+</div>
+<!--// c_wrap -->
+</body>
+</html>

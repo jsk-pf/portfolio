@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="하남 지식산업센터 분양 , 하남 아파트형공장 , 사무실 , 공장 , 창고등 업무용부동산 전문 , 신규지식산업센터 분양/임대">
+<meta property="og:type" content="website">
+<meta property="og:title" content="하남 지식산업센터 분양홍보관">
+<meta property="og:description" content="하남 지식산업센터 분양 , 하남 아파트형공장 , 사무실 , 공장 , 창고등 업무용부동산 전문 , 신규지식산업센터 분양/임대">
+<meta property="og:url" content="http://www.하남지식산업센터분양홍보관.com">
+<title> 하남 지식산업센터 분양홍보관 </title>
+<link rel="stylesheet" href="../resources/css/style.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="../resources/js/quick.js"></script>
+
+<!--[if lt ie 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+		<!-- header -->
+		<div class="header">
+			<div class="wrap">
+				<h1><a href="#none"><img src="../resources/images/common/logo.png" alt="하남 지식산업센터 분양홍보관" /></a></h1>
+			</div>
+			<div class="gnb_area">
+				<ul class="gnb">
+					<li class="gnb01"><a href="sub01_video.html">미사센텀비즈</a></li>
+					<li class="gnb02"><a href="sub02_video.html">미사하우스디엘타워</a></li>
+					<li class="gnb03"><a href="sub03_video.html">하남테스타타워</a></li>
+					<li class="gnb04"><a href="sub04_video.html">하남테크노밸리(가칭)</a></li>
+				</ul>
+			</div> 
+		</div>
+		<!-- //header -->
+
+
+		<!-- container -->
+		<div class="container">
+        <div class="wrap">
+            <div class="nav_wrap">
+                <img src="../resources/images/sub/sub04_nav_img.jpg" alt="" class="nav_img">
+                <h2 class="nav_title">하남테크노밸리</h2>
+                <ul class="navgation">
+                    <li class="on"><a href="sub04_video.html">하남테크노밸리</a></li>
+                    <li><a href="sub04_merit.html">특장점/건축개요</a></li>
+                    <li><a href="sub04_location.html">사업장위치</a></li>
+                    <li><a href="sub04_floor.html">층별안내</a></li>
+                </ul>
+                <div class="aside03">
+                <ul>
+                    <li>
+                        <img src="../resources/images/sub/tel_bn02.gif" alt="분양상담문의 02-498-0700">
+                    </li>
+                    <li><a href="#none"><img src="../resources/images/sub/lo_bn02.gif" alt="오시는길 안내"></a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="contents_wrap">
+                <ul class="location">
+                    <li class="home">HOME</li>
+                    <li>하남테크노밸리</li>
+                    <li class="now">하남테크노밸리</li>
+                </ul>
+                
+              <div class="contents">
+                    <div class="prepare">
+                        <img src="../resources/images/common/preparing_img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+		<!-- //container -->
+
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="wrap">
+				<h2><a href="#none"><img src="../resources/images/common/logo.png" alt="하남 지식산업센터 분양홍보관" /></a></h2>
+				<div class="right_box">
+					<p class="tel">TEL : 02-498-0700</p>
+					<ul>
+						<li>명우공인중개사사무소 &nbsp;|&nbsp;</li>
+						<li>대표 : 최정관 &nbsp;|&nbsp;</li>
+						<li>서울특별시 성동구 성수이로 66, 101-1호(성수동2가, 서울숲 드림타워)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+
+		
+		<div id="aside">
+		<ul>
+			<li>
+				<div class="calculator">
+					<h3>평형계산기</h3>
+					<input id="area" type="text" onclick="select_cal(1);"> ㎡<br>
+					<input type="button" value="계산하기" onclick="calc_area();"><br>
+					<input id="pyoung" onclick="select_cal(2);" type="text"> <span>평</span>
+				</div>
+			</li>
+			<li><a href="http://blog.naver.com/kkann07" target="_blank"><img src="../resources/images/common/banner_blog.gif" alt="명우부동산 블로그"></a></li>
+			<li><a href="http://www.facebook.com/mw4988400" target="_blank"><img src="../resources/images/common/banner_facebook.gif" alt="명우부동산 페이스북"></a></li>
+			<li><a href="http://www.mwreal.com" target="_blank"><img src="../resources/images/common/banner_mw.gif" alt="명우부동산홈페이지가기"></a></li>
+		</ul>	
+	</div>
+
+	<script>
+		var select =1;
+
+		function calc_area(){
+			var area = $("#area").val();
+			var pyoung = $("#pyoung").val();
+
+			var standard="";
+			var result="";
+
+			//평 계산	
+			if(select == 1){
+
+				if(area ==""){
+					alert("면적을 입력하세요.");
+					$("#area").focus();		
+					return false;
+				}
+				
+				if(!isNumber(area)) {
+					alert("숫자를 입력하세요.");
+					$("#area").val('').focus();
+					return false;
+				}
+				
+				standard =0.3025;
+				result = area * standard;
+				$("#pyoung").val((result).toFixed(2));
+			}
+			//제곱미터 계산
+			else {
+
+				if(pyoung ==""){
+					alert("면적을 입력하세요.");
+					$("#pyoung").focus();		
+					return false;
+				}
+				
+				if(!isNumber(pyoung)) {
+					alert("숫자를 입력하세요.");
+					$("#pyoung").val('').focus();
+					return false;
+				}
+
+				standard =3.305785;
+				result = pyoung * standard;
+				$("#area").val((result).toFixed(2));
+			}
+		}
+
+		function select_cal(sel){
+			select = sel;
+		}
+
+		function isNumber(s) {
+			  s += ''; // 문자열로 변환
+			  s = s.replace(/^\s*|\s*$/g, ''); // 좌우 공백 제거
+			  if (s == '' || isNaN(s)) return false;
+			  return true;
+			}
+	</script>
+	<script type="text/javascript">initMoving(document.getElementById("aside"), 170, 173, 300);</script> 
+</body>
+</html>
+

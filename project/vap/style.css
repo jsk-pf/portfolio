@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import url(//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li,form, fieldset, legend, input, textarea, p, blockquote table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; font-family:'Nanum Barun Gothic', sans-serif; color:#000000;}
+img, button {vertical-align:top; border:0;}
+li { list-style:none;}
+address, caption, cite, code, dfn, em, strong, th, var {font-style:normal; font-weight:normal;}
+input[type=button], input[type=submit], input[type=reset], input[type=image], button{cursor:pointer;}
+a {outline:none;}
+caption , legend{display:none;}
+button {border:none;}
+
+/* common */
+.container {background-repeat:no-repeat; background-image:url(images/immunity_bg.jpg); background-position:top center; min-height:3611px; max-width:1900px; min-width:1126px; margin:0 auto; position:relative;}
+.wrap {margin:0 auto;width:1126px; min-height:3611px;}
+.wrap:after {content:''; display:block; clear:both;}
+.skip {width:1px; height:1px; padding:0; border:0; margin:-1px; overflow:hidden; position:absolute; clip:rect(0 0 0 0);}
+.hide {text-indent:100%; white-space:nowrap; overflow:hidden;}
+
+#puzzle_container > img {padding:2px;border:1px solid #FFFFFF;background-color:#FFFFFF;}
+.puzzle_area {padding:516px 40px 0 42px;}
+.puzzle_area:after {content:''; display:block; clear:both;}
+.puzzle_list {max-width:203px; float:left; display:inline-block; margin-right:28px;}
+.puzzle_list:after{content:''; display:block; clear:both;}
+.puzzle_list li  {display:block; max-width:197px; height:124px; border:3px solid #fff; margin-bottom:6px;}
+.puzzle_list li:last-of-type {margin-bottom:0;}
+.puzzle_list li img {width:197px; height:124px;}
+
+/* btn_area*/
+.btn_area {position:relative; min-height:92px; top:10px;}
+a.mix_btn {display:inline-block; width:250px; height:77px; position:absolute; left:554px; top:15px;}
+.mix_btn img{position:absolute; }
+.sns_btn {position:absolute; right:58px; top:0;}
+.sns_btn li {display:inline-block;}
+.btn_area:after {content:''; display:block;clear:both;}
+
+/* jqpuzzle */
+.jqPuzzle {background-color:#fff;}
+.jqPuzzle div {background-color:transparent;margin:0px;padding:0px;border-style:none;}
+.jqPuzzle .jqp-wrapper {padding:2px;border:1px solid #FFFFFF; background-color:#FFFFFF; background:url('images/vap_logo.jpg');}
+.jqPuzzle .jqp-piece {border:1px solid #FFFFFF;}
+.jqPuzzle .jqp-piece span {font-size:15px; font-weight:bold; color:#ffffff; width:20px; height:20px; display:inline-block; padding:3px 0 0 10px; background:#2d2d2f; opacity:0.2; filter:alpha(opacity=20); }
+.jqPuzzle .jqp-piece:hover {border:2px dashed #3e3e3e;}
+.jqPuzzle.jqp-solved .jqp-piece:hover {	border-style:solid;}
+
+/* popup area */
+.popup_area {/*display:none;*/ position:fixed; top:50%; left:50%; width:745px; max-width:745px; max-height:770px;  height:770px; margin:-410px 0 0 -375px;  padding:20px 20px 30px 35px; background-color:#fff; z-index:9999; }
+.layer_bg { display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50);}
+.sns_layout {position:relative; height:100%;} 
+.popup_title {position:relative; border-bottom:2px solid #877e77; padding-bottom:20px;}
+.popup_title p {display:inline-block; font-size:35px; margin-top:30px;}
+.popup_title p span {font-weight:bold;}
+.popup_close_btn {width:68px; height:68px; position:absolute; top:0; right:0; border:none; background:url('./images/popup_close_btn.jpg') no-repeat;}
+
+/* sns share */
+.share_wrap {background-color:#f9f9f9; border:1px solid #eef0f0; border-radius:7px; width:100%; height:276px; margin-top:17px;}
+.share_wrap ol {margin:32px 0 0 48px;}
+.share_wrap li {display:inline-block; vertical-align:top; text-align:center}
+.share_wrap li:nth-child(odd) img {height:151px; margin:0 auto; display:block;}
+.share_wrap li:nth-child(even) img {padding:65px 30px 0 30px;}
+.share_wrap p {font-size:20px; margin-top:20px; }
+.share_wrap li:first-child p {padding-top:10px;}
+.step_ico {margin:62px 15px 0 15px;}
+.sns_list {margin-top:32px;text-align:center;}
+.sns_list li {display:inline-block; margin-right:40px;}
+.sns_layout > input[type='button'] {position:absolute; bottom:0; left:92px; display:inline-block; background-color:#3b3734; border:1px solid #a4a2a0; width:553px; height:62px; font-size:33px; color:#fff; font-weight:600; letter-spacing:30px; text-align:center;}
+
+/* personal data */
+.personal_data {padding:10px 0 0 25px;}
+.personal_data li {margin-top:15px;}
+.personal_data label {font-size:20px; color:#747474; font-weight:500;min-width:100px; display:inline-block; }
+
+.name_fm , .gender_fm {display:inline-block;}
+.name_fm {width:352px;}
+.gender_fm label {min-width:48px;}
+.address_fm {position:relative; height:80px;}
+.address_fm .addr_input {position:absolute; left:1px; top:35px;}
+
+.post_btn {background:url(images/post_ico.png) no-repeat; width:101px; height:32px;}
+.personal_data span.ask_title {font-size:19px; color:#393434; font-weight:bold; }
+.personal_data input[type='text'] {font-size:16px; height:20px; min-height:20px; border:1px solid #dcdddd; color:#747474; padding:5px; }
+.personal_data select {font-size:16px; height:32px; min-height:32px; border:1px solid #dcdddd; color:#747474;  padding:5px; }
+.name_fm input[type='text'] {width:160px;}
+.phone_fm input[type='text'] {width:80px;}
+.address_fm input[type='text']:first-of-type {width:175px;}
+.address_fm input[type='text']:last-of-type {width:510px; margin:10px 0 0 102px;}
+.url_fm input[type='text'] {width:510px;}
+.name_fm input[type='text'] {width:160px;}
+.ask_select {width:525px;}
+.ask_input {width:515px;visibility:hidden;}
+.ask_select, .ask_input {margin:10px 0 0 102px;}
+
+.agree_data {margin:20px 30px 0 30px; background-color:#f9f9f9; padding:35px 0 25px 55px; }
+.agree_data > div {height:31px; margin-bottom:10px;}
+.agree_data button {background:url('./images/detail_ico.png') no-repeat; width:104px; height:31px;}
+.agree_data input[type='checkbox'] {vertical-align:middle; margin-right:5px;}
+.agree_data label {width:220px; display:inline-block; font-size:15px; line-height:31px;}
+
+
+/* 삭제 예정 (html + css + js) */
+.sns_pop, .per_pop {display: none;} 

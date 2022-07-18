@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--[if IE 6]><html lang="ko" class="no-js old ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko" class="no-js old ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko" class="no-js old ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko" class="no-js modern ie9"><![endif]-->
+<!--[if !IE]><!-->
+<!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="./css/base.css" type="text/css"/>
+<!--<link rel="stylesheet" href="./css/nanumgothic.css" type="text/css"/>-->
+<link rel="stylesheet" href="./css/common.css" type="text/css"/> 
+<link rel="stylesheet" href="./css/layout.css" type="text/css"/> 
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" /> 
+<title>ThinkTree</title>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/* 메뉴 펼침 기능 */
+		$(".do_menu01").mouseover(function(){
+			$(".cont_txt_d01").css('display','block');
+			$(".cont_txt_d02").css('display','none');
+			$(".cont_txt_d03").css('display','none');
+			$(".cont_txt_d04").css('display','none');			
+		});
+		$(".do_menu02").mouseover(function(){
+			$(".cont_txt_d01").css('display','none');
+			$(".cont_txt_d02").css('display','block');
+			$(".cont_txt_d03").css('display','none');
+			$(".cont_txt_d04").css('display','none');			
+		});
+		$(".do_menu03").mouseover(function(){
+			$(".cont_txt_d01").css('display','none');
+			$(".cont_txt_d02").css('display','none');
+			$(".cont_txt_d03").css('display','block');
+			$(".cont_txt_d04").css('display','none');			
+		});
+		$(".do_menu04").mouseover(function(){
+			$(".cont_txt_d01").css('display','none');
+			$(".cont_txt_d02").css('display','none');
+			$(".cont_txt_d03").css('display','none');
+			$(".cont_txt_d04").css('display','block');			
+		});
+		
+		
+
+		/* 레이어팝업 활성화 기능 */
+			$('.site_map').click(function(){
+				 var maskHeight = $(document).height();  
+      			 var maskWidth = $(window).width();  
+				 
+				$('.pop_bg').css({'width':maskWidth,'height':maskHeight});  
+				$('.sitemap_area').css('display','block');
+				$('.pop_bg').css('display','block');
+			});
+			
+			
+				
+		/* 레이어 팝업 닫기 버튼 기능 */
+		$(".close_btn").click(function(){
+			$('.sitemap_area').css('display','none');
+			$('.pop_bg').css('display','none');
+		});
+		
+		/* 레이어 팝업 활성화 시 배경 클릭 시 레이어팝업 닫힘 기능
+		$('.pop_bg').click(function(){
+			$('.sitemap_area').css('display','none');
+			$('.pop_bg').css('display','none');
+		}); */
+	
+		
+		
+		
+		
+		/* 하단 메뉴 영역  활성화 */
+		$(".spread_btn").click(function(){
+			var contarea = $('.content_area2');
+			if(contarea.is(":visible")){
+				
+				contarea.css('display','none');
+				$(".spread_btn").attr('src','./images/common/img_splitter_down.png');
+			}else{
+				$(".spread_btn").attr('src','./images/common/img_splitter_up.png');
+				contarea.css('display','block');
+				
+			}
+		});
+		
+		/* footer 영역 selectbox 활성화 */
+		$(".lang_area").click(function(){
+			if($('.lang_list').is(":visible")){
+				$('.lang_list').slideUp(100);
+			}else{
+				$('.lang_list').slideDown(100);
+			}
+		});
+	});
+	
+			
+</script>
+<!--m_wrap -->
+<div id="m_wrap">
+<!--wrap_sub -->
+<div id="wrap_sub">
+<!-- m_header -->
+<div id="m_header">
+	<img src="./images/main/visual_main.jpg" class="mgb_4" alt="we build a best Optimal solution, moblie &amp; tablet"/>
+    <p class="m_head_btn"><a href="#"><img src="./images/main/btn_visual.png" alt="download Company Profile"/></a></p>
+    <ul> 
+        <li class="logo"><a href="./index.html"><img src="./images/common/logo_gnb.png" alt="thinktree" title="ThinkTree"/></a></li>
+        <li>
+            <div class="navigation">
+                <ul class="navigation_sub">
+                    <li class="top_gnb01" title="About us"><a href="./about/aboutMain.html"></a></li>
+                    <li class="top_gnb02" title="Project"><a href="./project/projectMain.html"></a></li>
+                    <li class="top_gnb03" title="Services" ><a href="./project/serviceMain.html"></a></li>
+                    <li class="top_gnb04" title="Notice&amp;News"><a href="./notice/noticeList.html"></a></li>
+                    <li class="top_gnb05" title="thinkPeople"><a href="./people/peopleMain.html"></a></li>
+                </ul>
+            </div>
+        </li>     
+        <li class="top_com_btn">
+            <a href="#"><img class="site_map" src="./images/common/btn_gnb_sitemap.png" alt="Sitemap" title="Sitemap"/></a>
+            <a href="./notice/contact.html"><img src="./images/common/btn_gnb_contact.png" alt="Contact" title="Contact"/></a>	
+            <a href="http://download.think-tree.com/" target="_blank"><img src="./images/common/btn_gnb_support.png" alt="Support" title="Support"/></a>
+        </li>
+    </ul>
+</div>
+<!-- // m_header -->
+<!-- m_container -->
+<div id="m_container">
+	<!-- content_area1 -->
+	<div class="content_area1">
+	<!-- cont_menu1 -->
+    	<div class="cont_menu1">
+        	<ul> 
+                <li><img src="./images/main/label_whatwedo.png" class="mgb20" alt="what we do"/></li>
+            </ul>
+            <ul class="cont_img">
+                <li class="cont_img01"><img src="./images/main/thum_whatwedo.png" alt="" /></li>
+                <li class="cont_img02">
+                	<div>
+                        <ul class="do_group">
+                            <li class="do_menu01"><a href="./services/service.html"></a></li>
+                            <li class="do_menu02"><a href="./services/service.html"></a></li>
+                            <li class="do_menu03"><a href="./services/service.html"></a></li>
+                            <li class="do_menu04"><a href="./services/service.html"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cont_txt_d01"  style="display:block;" >
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>IMC (Intergrated Marketing Communication)</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Marketing (PPL/ sponsorship/Brand Marketing)</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Viral Marketing (Blog/Cafe/Website)</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Web Agency (Shopping mall/Web contents/CMS)</li>
+            </ul>
+            <ul class="cont_txt_d02"  style="display:none;" >
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Planning &amp; Consulting (ISP)</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Web Site &amp; Homepage</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Web Media Development</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Web Mining &amp; Data Mining</li>
+            </ul> 
+            <ul class="cont_txt_d03"  style="display:none;" >
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Server System Management (Unix, Linux, Windows)</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>System Intergration</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>H/W &amp; S/W sale</li>
+            </ul> 
+            <ul class="cont_txt_d04"  style="display:none;" >
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Interactive Media Development (S/W)</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Web 2.0 Solution (UCC, FLEX, FLASH)</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Broadcasting Multi-Media Solution</li>
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/>Android Application</li>
+            </ul>            
+        </div>
+        <!-- //cont_menu1 -->
+          <!-- cont_menu2 -->
+        <div class="cont_menu2">
+        	<ul> 
+                <li><img src="./images/main/label_our.png" class="mgb20" alt="our vision"/></li>
+            </ul>
+            <ul class="cont_img">
+                <li><a href="./about/ceo.html"><img src="./images/main/thum_vision.png" alt="" /></a></li>
+            </ul>
+            <ul class="cont_txt">
+               <li>최고의 전문가집단인 Think Tree는 가치혁신을 통하여, 고객에게 가장 적합하고 가치창출이 극대화 된 차별화 서비스를 제공하기 위해, 
+                    지속적인 연구개발과 다양한 응용분야의 전문지식을 바탕으로 
+                    사업영역을 구축하고 있습니다.
+               </li>
+            </ul>           
+        </div>
+        <!-- //cont_menu2 -->
+        <!-- cont_menu3 -->
+        <div class="cont_menu3">
+        	<ul> 
+                <li><img src="./images/main/label_recruit.png" class="mgb20" alt="recruit"/></li>
+            </ul>
+            <ul class="cont_img">
+                <li><a href="./people/recruit.html"><img src="./images/main/thum_pasion.png" alt="" /></a></li>
+            </ul>
+            <ul class="cont_txt">
+               <li>어린시절 꿈꾸던 많은 것들, 
+                꿈을 현실로 만드는 열정,
+                열정과 전문성을 갖춘 여러분을 
+                위해 항상 문을 열어 놓겠습니다.
+               </li>
+            </ul>           
+        </div>
+        <!-- //cont_menu3 -->
+     </div>
+     <!-- //content_area1 -->
+     <p><a href="#"><img src="./images/common/img_splitter_down.png" alt="내용 펼침 버튼" class="spread_btn"/></a></p>
+     <!-- content_area2 -->
+    <div class="content_area2" style="display:none;">
+    	<!-- cont_menu1 -->
+    	<div class="cont_menu1">
+        	<ul> 
+                <li><img src="./images/main/label_news.png" class="mgb20" alt="news"/></li>
+            </ul>
+            <ul class="cont_txt">
+                <li><img src="./images/common/ico_dot.png" class="dot" alt=""/><a href="./notice/noticeView.html">GMK 스마트 전자계약 시스템 서비스 오픈</a></li>
+                <li><img src="./images/common/ico_dot.png" class="dot"  alt=""/><a href="./notice/noticeView.html">2013년 씽크트리 사무실이전을 알려드립니다.</a></li>
+                <li><img src="./images/common/ico_dot.png" class="dot"  alt=""/><a href="./notice/noticeView.html">[특허등록] 서버관리 단말기, 서버관리 장치 및 서버 관리 방법</a></li>
+                <li><img src="./images/common/ico_dot.png" class="dot"  alt=""/><a href="./notice/noticeView.html">SMART! Work &amp; Society 2012 행사개최</a></li>
+                <li><img src="./images/common/ico_dot.png"  class="dot" alt=""/><a href="./notice/noticeView.html">2012년 씽크트리 사무실이전을 알려드립니다. 2012년 씽크트리 사무실이전을 알려드립니다. </a></li>
+            </ul>           
+        </div>
+        <!-- //cont_menu1 -->
+          <!-- cont_menu4 -->
+        <div class="cont_menu4" >
+        	<ul> 
+                <li><img src="./images/main/label_pojects.png" class="mgb20" alt="featured projects"/></li>
+            </ul>
+            <ul class="cont_img">
+                <li><img src="./images/main/thum_project_gm.png" class="mgr25" alt="project gm"/></li>
+                <li class="cont_explain">
+                    <p>GM Korea</p>
+                    <p><img src="./images/common/ico_dot.png" class="mgr5" alt=""/>2013년 01월 12일 ~ 2013년 04월 30일</p>
+                    <p><img src="./images/common/ico_dot.png" class="mgr5" alt=""/>Client : GM Korea</p>
+                    <p><img src="./images/common/ico_dot.png" class="mgr5" alt=""/>GM Korea 전자 매매 계약서</p>
+                </li>
+            </ul>  
+            <ul class="cont_slide">
+          	  <li><a href="#"><img src="./images/common/ico_pagingN.png" class="mgr10" alt=""/></a></li>
+              <li><a href="#"><img src="./images/common/ico_pagingN.png" class="mgr10" alt=""/></a></li>
+              <li><a href="#"><img src="./images/common/ico_pagingN.png" class="mgr10" alt=""/></a></li>
+              <li><a href="#"><img src="./images/common/ico_pagingN.png" class="mgr10" alt=""/></a></li>
+              <li><a href="#"><img src="./images/common/ico_pagingP.png" class="mgr15" alt=""/></a></li>
+              <li><a href="./project/solution.html"><img src="./images/common/btn_projectmore.png" class="slide_btn" alt="view all projects"/></a></li>
+            </ul>   
+        </div>
+        <!-- //cont_menu4 -->
+        <p class="mgt55"><img src="./images/common/img_footline.png" alt=""/></p>   
+    </div>
+    <!-- //content_area2 -->
+</div>
+<!-- //m_container -->
+<!-- footer -->
+<div id="footer">
+	<ul>
+    	<li>
+        <img src="./images/common/logo_foot.png" class="mgr65" alt="하단 ThinkTree logo"/>
+        </li>
+        <li class="mgr20">
+            <address>
+                <p>(121-904) 서울 특별시 마포구 성암로 189번지 중소기업DMC타워 17층 / TEL. 02-309-2900 / FAX. 02-3151-9199</p>
+                <p>Copyright(C) 2005-2013 THINK TREE.All Rights Reserved.</p>
+            </address>
+        </li>        
+     </ul>	
+    <div class="lang_area">
+         <p>Language</p>
+         <ol class="lang_list" style="display:none;" >
+           <li><a href="#">Korean</a></li>
+           <li><a href="#">Japaness</a></li>
+           <li><a href="#">English</a></li>
+         </ol>
+    </div>
+</div>
+<!-- // footer -->
+ <!-- sitemap 레이어 팝업 -->
+    <div class="sitemap_area" style="display:none;">
+		<div class="sitemap_menu" >
+            <ul class="site_depth">
+                <li class="site_title"><a href="./about/aboutMain.html">About us</a></li>
+                <li><a href="./about/ceo.html">Ceo Message</a></li>
+                <li><a href="./about/overview.html">Overview</a></li>
+                <li><a href="./about/history.html">History</a></li>
+                <li><a href="./about/organization.html">Organization</a></li>
+                <li><a href="./about/annual.html">Annual Report</a></li>
+                <li><a href="./about/overview.html">Award</a></li>
+                <li><a href="./about/partner.html">Partner &amp; Client</a></li>
+                <li><a href="./about/ci.html">CI</a></li>
+                <li><a href="./about/location.html">Location</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="./project/projectMain.html">Project</a></li>
+                <li><a href="./project/solution.html">Solution</a></li>
+                <li><a href="./project/public.html">Public institution</a></li>
+                <li><a href="./project/online.html">Online Service</a></li>
+                <li><a href="./project/mobile.html">Mobile</a></li>
+                <li><a href="./project/management.html">Management</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="./services/serviceMain.html">Services</a></li>
+                <li><a href="./services/service.html">Service</a></li>
+                <li><a href="./services/platform.html">Platform</a></li>
+                <li><a href="./services/product.html">Product</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="./notice/noticeList.html">Notice &amp; News</a></li>
+                <li><a href="./notice/noticeList.html">Notice &amp; News</a></li>
+                <li><a href="./notice/contact.html">Contact</a></li>
+            </ul>
+            <ul class="site_depth">
+                <li class="site_title"><a href="./people/peopleMain.html">think People</a></li>
+                <li><a href="./people/people.html">think People</a></li>
+                <li><a href="./people/community.html">Community</a></li>
+                <li><a href="./people/recruit.html">Recruit</a></li>
+                <li><a href="./people/welfare.html">Welfare</a></li> 
+            </ul>
+		</div>
+    	<div class="sitemap_btn"><img class="close_btn" src="./images/common/btn_sitemap_close.png" alt="사이트맵 닫기 버튼"/></div>
+    </div>
+    <div class="pop_bg" style="display:none;"></div> <!--레이어 팝업 배경-->
+    <!-- //sitemap 레이어 팝업 -->
+</div>
+<!--//wrap_sub -->
+</div>
+<!--//m_wrap -->
+
+</body>
+
+</html>

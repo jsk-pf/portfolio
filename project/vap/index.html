@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VAP</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./jquery.jqpuzzle.js"></script>
+    <script type="text/javascript" src="./style.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".instagram").click(function () {
+                $(".sns_pop").fadeIn(300);
+                $(".layer_bg").css("display", "block");
+            });
+            $(".next_btn").click(function () {
+                $(".per_pop").fadeIn(300);
+                $(".layer_bg").css("display", "block");
+            });
+        });
+    </script>
+    <!--[if lt ie 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+</head>
+<body>
+    <div class="container">
+       <!-- wrap -->
+        <div class="wrap">
+            <!-- puzzle_area -->
+            <div class="puzzle_area">
+                <h1 class="skip">Puzzle</h1>
+                <ul class="puzzle_list">
+                    <li class="immunity">
+                        <a href="#none"><img src="images/immunity.jpg" alt="이뮨젤리"> </a>
+                    </li>
+                    <li class="greenlight">
+                        <a href="#none"><img src="images/greenlight.jpg" alt="그린라이트"> </a>
+                    </li>
+                    <li class="antioxidant">
+                        <a href="#none"><img src="images/antioxidant.jpg" alt="항산화젤리"> </a>
+                    </li>
+                    <li class="sunbeamvitd">
+                        <a href="#none"><img src="images/sunbeamvitd.jpg" alt="햇살비타민D"> </a>
+                    </li>
+                    <!--<li class="skincollagen">
+                        <a href="#none"><img src="images/skincollagen.jpg" alt="스킨콜라겐"> </a>
+                    </li>-->
+                </ul>
+                <div id="puzzle_container"> <img class="myPics" src="images/immunity.jpg" alt="" /> </div>
+            </div>
+            <!-- // puzzle_area -->
+            <!-- btn_area -->
+            <div class="btn_area">
+                <a href="#none" class="mix_btn"><img src="images/immunity_mix.png" alt="MIX"></a>
+                <ul class="sns_btn">
+                    <li class="instagram">
+                        <a href="#none"><img src="images/instgram_ico.png" alt="instagram"></a>
+                    </li>
+                    <li class="facebook">
+                        <a href="#none"><img src="images/facebook_ico.png" alt="facebook"></a>
+                    </li>
+                    <li class="twitter">
+                        <a href="#none"><img src="images/twitter_ico.png" alt="twitter"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // btn_area -->
+        </div>
+        <!-- // wrap -->
+        
+        <!-- popup -->
+        <div class="layer_bg"></div>
+        
+        <!-- sns 이벤트 공유 팝업 -->
+        <div class="popup_area sns_pop">
+            <div class="sns_layout">
+                <div class="popup_title">
+                    <p>개인 <span>SNS에 이벤트를 공유</span>해 주세요.</p>
+                    <input type="button" class="popup_close_btn hide" value="닫기"> </div>
+                <div class="share_wrap">
+                    <ol>
+                        <li> <img src="images/share_step01.png" alt="">
+                            <p>퍼즐이벤트 참여</p>
+                        </li>
+                        <li><img src="images/step_ico.png" alt=""></li>
+                        <li> <img src="images/share_step02.png" alt="">
+                            <p>이벤트를 SNS에 공유
+                                <br>다음단계 클릭</p>
+                        </li>
+                        <li><img src="images/step_ico.png" alt=""></li>
+                        <li> <img src="images/share_step03.png" alt="">
+                            <p>참여자 정보 입력
+                                <br>참여완료!</p>
+                        </li>
+                    </ol>
+                </div>
+                <ul class="sns_list">
+                    <li>
+                        <a href="#none"><img src="./images/pop_kakao.jpg" alt="kakaostory"></a>
+                    </li>
+                    <li>
+                        <a href="#none"><img src="./images/pop_facebook.jpg" alt="facebook"></a>
+                    </li>
+                </ul>
+                <input type="button" value="다음 단계" class="next_btn"> </div>
+        </div>
+        <!-- // sns 이벤트 공유 팝업 -->
+        <!-- 개인정보 입력 팝업 -->
+        <div class="popup_area per_pop">
+            <div class="sns_layout">
+                <div class="popup_title">
+                    <p><span>개인정보 입력</span></p>
+                    <input type="button" class="popup_close_btn hide" value="닫기"> </div>
+                <!-- personal_data -->
+                <div class="personal_data">
+                    <ul>
+                        <li class="name_fm">
+                            <label for="name">이름</label>
+                            <input type="text" id="name"> </li>
+                        <li class="gender_fm">
+                            <label>성별</label>
+                            <select name="gender">
+                                <option value="">남자</option>
+                                <option value="">여자</option>
+                            </select>
+                        </li>
+                        <li class="age_fm">
+                            <label for="age">나이</label>
+                            <select name="age" id="age">
+                                <option value="">10대</option>
+                                <option value="">20대</option>
+                                <option value="">30대</option>
+                                <option value="">40대</option>
+                                <option value="">50대</option>
+                                <option value="">60대 이상</option>
+                            </select>
+                        </li>
+                        <li class="phone_fm">
+                            <label>연락처</label>
+                            <input type="text"> -
+                            <input type="text"> -
+                            <input type="text"> </li>
+                        <li class="address_fm">
+                            <label>주소</label>
+                            <input type="text">
+                            <button type="button" class="post_btn" value="우편번호찾기"></button>
+                            <input type="text" class="addr_input"> </li>
+                        <li class="url_fm">
+                            <label for="url">URL</label>
+                            <input type="text" id="url"> </li>
+                        <li class="ask_fm">
+                            <label>질문</label> <span class="ask_title">VAP 와 함께 만들고 싶은 나의 변화는?</span>
+                            <select name="ask" class="ask_select">
+                                <option value="">1. 올 여름이 오기 전 몸매 관리</option>
+                                <option value="">2. 속부터 예뻐지는 나의 피부, 이너뷰티</option>
+                                <option value="">3. 지금부터 시작! 운동</option>
+                                <option value="">4. 내 몸 건강 챙기기, 변비탈출</option>
+                                <option value="">5. 내 몸 건강 챙기기, 면역</option>
+                                <option value="">6. 내 몸 건강 챙기기, 뼈건강</option>
+                                <option value="7">7. 기타 : 직접 작성</option>
+                            </select>
+                            <input type="text" class="ask_input"> </li>
+                    </ul>
+                </div>
+                <!-- personal_data -->
+                <!-- agree_data -->
+                <div class="agree_data">
+                    <div>
+                        <input type="checkbox" id="agree_info">
+                        <label for="agree_info">개인정보 수집 및 위탁에 관한 동의</label>
+                        <button type="button" value="자세히보기"></button>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="agree_mgrketing">
+                        <label for="agree_mgrketing">마케팅 활용 동의(선택)</label>
+                        <button type="button" value="자세히보기"></button>
+                    </div>
+                </div>
+                <!-- agree_data -->
+                <input type="button" value="응모완료"> </div>
+        </div>
+        <!-- // 개인정보 입력 팝업 -->
+        
+        <!-- // popup -->
+    </div>
+</body>
+
+</html>
