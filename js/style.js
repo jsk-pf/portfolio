@@ -12,7 +12,6 @@ function scrollHeader() {
   $(window).on('scroll', function () {
     var scrollPosition = $(this).scrollTop();
     // 스크롤의 위치가 20 이상 일 때
-    console.log(scrollPosition);
 
     if (scrollPosition > 20) {
       $('#header').addClass('on');
