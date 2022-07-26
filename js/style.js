@@ -71,6 +71,19 @@ function skillAnimation() {
   });
 }
 
+function mediaFunc(x) {
+  if (x.matches) {
+    console.log('test');
+
+    scrollHeader();
+  } else {
+    return 0;
+  }
+}
+
+var x = window.matchMedia('(min-width:799px)');
+mediaFunc(x);
+
 /* portfolio  popup*/
 
 function portfolioPopup() {
