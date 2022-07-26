@@ -6,23 +6,6 @@ function topMenuBtn() {
   });
 }
 
-// 스크롤 발생 시 메뉴 보이기
-function scrollHeader() {
-  // 스크롤이 발생하면 메뉴 보이기
-  $(window).on('scroll', function () {
-    var scrollPosition = $(this).scrollTop();
-    // 스크롤의 위치가 20 이상 일 때
-
-    if (scrollPosition > 20) {
-      $('#header').addClass('on');
-    } else {
-      // 윈도우 감추기
-      $('#header').removeClass('on');
-      return 0;
-    }
-  });
-}
-
 // gnb 메뉴 선택시 스크롤 이동
 function scrollGnb() {
   $('#header h1, .gnb li').click(function () {
@@ -149,4 +132,17 @@ $(function () {
   portfolioPopup();
   poftfolioImg();
 });
-scrollHeader();
+
+// 스크롤이 발생하면 메뉴 보이기
+$(window).on('scroll', function () {
+  var scrollPosition = $(this).scrollTop();
+  // 스크롤의 위치가 20 이상 일 때
+
+  if (scrollPosition > 200) {
+    $('#header').addClass('on');
+  } else {
+    // 윈도우 감추기
+    $('#header').removeClass('on');
+    return 0;
+  }
+});
