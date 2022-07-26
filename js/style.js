@@ -128,7 +128,7 @@ function poftfolioImg() {
 
 $(function () {
   //videoHeight();
-  scrollHeader();
+  // scrollHeader();
   topMenuBtn();
   scrollGnb();
   skillAnimation();
