@@ -134,18 +134,18 @@ $(function () {
 });
 
 // 스크롤이 발생하면 메뉴 보이기
-$(window).on('scroll', function () {
-  var scrollPosition = $(this).scrollTop();
-  // 스크롤의 위치가 20 이상 일 때
+// $(window).on('scroll', function () {
+//   var scrollPosition = $(this).scrollTop();
+//   // 스크롤의 위치가 20 이상 일 때
 
-  if (scrollPosition > 200) {
-    $('#header').addClass('on');
-  } else {
-    // 윈도우 감추기
-    $('#header').removeClass('on');
-    return 0;
-  }
-});
+//   if (scrollPosition > 200) {
+//     $('#header').addClass('on');
+//   } else {
+//     // 윈도우 감추기
+//     $('#header').removeClass('on');
+//     return 0;
+//   }
+// });
 
 function scrollDisable() {
   $('body')
