@@ -149,4 +149,4 @@ $(function () {
   portfolioPopup();
   poftfolioImg();
 });
-scrollPosition();
+scrollHeader();
