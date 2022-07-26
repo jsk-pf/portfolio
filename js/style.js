@@ -9,14 +9,17 @@ function topMenuBtn() {
 // 스크롤 발생 시 메뉴 보이기
 function scrollHeader() {
   // 스크롤이 발생하면 메뉴 보이기
-  $(window).scroll(function () {
+  $(window).on('scroll', function () {
     var scrollPosition = $(this).scrollTop();
     // 스크롤의 위치가 20 이상 일 때
+    console.log(scrollPosition);
+
     if (scrollPosition > 20) {
       $('#header').addClass('on');
     } else {
       // 윈도우 감추기
       $('#header').removeClass('on');
+      return 0;
     }
   });
 }
