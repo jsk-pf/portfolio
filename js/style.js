@@ -74,18 +74,18 @@ function skillAnimation() {
   });
 }
 
-function mediaFunc(x) {
-  if (x.matches) {
-    console.log('test');
+// function mediaFunc(x) {
+//   if (x.matches) {
+//     console.log('test');
 
-    scrollHeader();
-  } else {
-    return 0;
-  }
-}
+//     scrollHeader();
+//   } else {
+//     return 0;
+//   }
+// }
 
-var x = window.matchMedia('(min-width:799px)');
-mediaFunc(x);
+// var x = window.matchMedia('(min-width:799px)');
+// mediaFunc(x);
 
 /* portfolio  popup*/
 
@@ -144,10 +144,10 @@ function poftfolioImg() {
 
 $(function () {
   //videoHeight();
-  // scrollHeader();
   topMenuBtn();
   scrollGnb();
   skillAnimation();
   portfolioPopup();
   poftfolioImg();
 });
+scrollPosition();
