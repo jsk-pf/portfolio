@@ -88,6 +88,9 @@ function portfolioPopup() {
   $('#busandbt').animatedModal({ modalTarget: 'busandbtModal' });
   $('#hyundaicard').animatedModal({ modalTarget: 'hyundaicardModal' });
   $('#lguplus').animatedModal({ modalTarget: 'lguplusModal' });
+  $('#kmiAdmin').animatedModal({ modalTarget: 'kmiAdminModal' });
+  $('#kmiPc').animatedModal({ modalTarget: 'kmiPcModal' });
+  $('#kmiMobile').animatedModal({ modalTarget: 'kmiMobileModal' });
 }
 
 /* poftfolio img */

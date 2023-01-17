@@ -1,844 +1,1030 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>Web Publisher, Kim Jiseon</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 
-    <meta property="og:url" content="http://jskpublisher.dothome.co.kr" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Web Publisher, Kim Jiseon" />
-    <meta property="og:description" content="안녕하십니까. 웹 퍼블리셔, 김지선입니다." />
-    <meta property="og:image" content="./image/ogimg.jpg" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon-precomposed" href="./image/homeico.png" />
-    <link rel="apple-touch-icon" href="./image/homeico.png" />
+<head>
+	<title>Web Publisher, Kim Jiseon</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marvel" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./js/scrollreveal.js"></script>
-    <script src="./js/animatedModal.min.js"></script>
-    <script defer src="./js/style.js"></script>
+	<meta property="og:url" content="http://jsk-pf.github.io/portfolio/index.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Web Publisher, Kim Jiseon" />
+	<meta property="og:description" content="안녕하십니까. 웹 퍼블리셔, 김지선입니다." />
+	<meta property="og:image" content="./image/ogimg.jpg" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon-precomposed" href="./image/homeico.png" />
+	<link rel="apple-touch-icon" href="./image/homeico.png" />
 
-    <script>
-      $(function () {
-        var videoFunc = function () {
-          var video = $('.visual_video');
-          var videoH = video.height();
-          video.closest('div').css('height', videoH);
-        };
-        $(window).resize(videoFunc);
-        $(document).ready(videoFunc);
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marvel" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" />
+	<link rel="stylesheet" href="./css/animate.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="./js/scrollreveal.js"></script>
+	<script src="./js/animatedModal.min.js"></script>
+	<script defer src="./js/style.js"></script>
 
-        $('.mask').click(function () {});
-      });
-    </script>
-  </head>
+	<script>
+		$(function () {
+			var videoFunc = function () {
+				var video = $('.visual_video');
+				var videoH = video.height();
+				video.closest('div').css('height', videoH);
+			};
+			$(window).resize(videoFunc);
+			$(document).ready(videoFunc);
 
-  <body>
-    <div id="skipnav"><a href="#contents">본문 바로가기</a></div>
+			$('.mask').click(function () { });
+		});
+	</script>
+</head>
 
-    <!--  header -->
-    <header id="header">
-      <div class="wrap">
-        <h1><a href="#visual">JSK</a></h1>
-        <nav>
-          <h2 class="skip">NAVIGATION</h2>
-          <ul class="gnb">
-            <li><a href="#about">about</a></li>
-            <li><a href="#skill">skill</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </nav>
-      </div>
+<body>
+	<div id="skipnav"><a href="#contents">본문 바로가기</a></div>
 
-      <div class="topmenu_btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </header>
-    <!--  header -->
+	<!--  header -->
+	<header id="header">
+		<div class="wrap">
+			<h1><a href="#visual">JSK</a></h1>
+			<nav>
+				<h2 class="skip">NAVIGATION</h2>
+				<ul class="gnb">
+					<li><a href="#about">about</a></li>
+					<li><a href="#skill">skill</a></li>
+					<li><a href="#portfolio">portfolio</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			</nav>
+		</div>
 
-    <section class="visual" id="visual">
-      <div class="wrap">
-        <video class="visual_video" muted autoplay loop playsinline>
-          <source src="./image/video.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </section>
+		<div class="topmenu_btn">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</header>
+	<!--  header -->
 
-    <!-- about -->
-    <section class="about" id="about">
-      <div class="wrap">
-        <h2 class="title">ABOUT</h2>
-        <p class="introline">Allow me to introduce myself to you.</p>
-        <div class="about_con">
-          <dl class="my">
-            <dt><span>01</span> MY</dt>
-            <dd>
-              <p><span>NAME</span>김지선</p>
-              <p><span>DATE OF BIRTH</span>1990. 09. 26</p>
-              <p><span>ADDRESS</span>서울시 중랑구</p>
-            </dd>
-          </dl>
-          <dl>
-            <dt><span>02</span> CONTRACT</dt>
-            <dd>
-              <p><span>PHONE</span>010-9243-6290</p>
-              <p><span>EMAIL</span><a href="mailto:jsjobrsm@gmail.com">jsjobrsm@gmail.com</a></p>
-              <p></p>
-            </dd>
-          </dl>
-          <dl>
-            <dt><span>03</span> PROJECT</dt>
-            <dd>
-              <p><span>2013.11 ~ 2014.06</span>웹 사이트 개발 및 퍼블리싱</p>
-              <p><span>2014.10 ~ 2016.05</span>잡코리아 채용공고 코딩</p>
-              <p><span>2016.06 ~ 2016.11</span>웹 사이트 퍼블리싱</p>
-              <p><span>2017.05 ~ 2017.06</span>퍼블리싱 및 쇼핑몰 유지보수</p>
-              <p><span>2018.01 ~ 2020.02</span>웨딩 사이트/APP 퍼블리싱</p>
-              <p><span>2020.07 ~ 2020.08</span>스포츠 분석사이트 모바일 퍼블리싱</p>
-              <p><span>2020.11 ~ 2020.12</span>현대캐피탈 사내감사시스템 퍼블리싱</p>
-              <p><span>2021.04 ~ 2021.05</span>부산 공공 마켓앱 퍼블리싱</p>
-              <p><span>2021.06 ~ 2021.10</span>현대카드 사이트 리뉴얼</p>
-              <p><span>2021.10 ~ 2022.02</span>LG UPLUS 사이트 리뉴얼</p>
-            </dd>
-          </dl>
-        </div>
-      </div>
-    </section>
-    <!-- about -->
+	<section class="visual" id="visual">
+		<div class="wrap">
+			<video class="visual_video" muted autoplay loop playsinline>
+				<source src="./image/video.mp4" type="video/mp4" />
+			</video>
+		</div>
+	</section>
 
-    <!-- skill -->
-    <section class="skill" id="skill">
-      <div class="wrap">
-        <h2 class="title">SKILL</h2>
-        <p class="introline">Self-improvement is at the core of success.</p>
-        <ul class="progress_list">
-          <li>
-            <div class="skill_box html">
-              <div><span class="skip">HTML</span></div>
-              <div><input type="hidden" value="100" /></div>
-            </div>
-          </li>
-          <li>
-            <div class="skill_box css">
-              <div><span class="skip">CSS/SCSS</span></div>
-              <div><input type="hidden" value="100" /></div>
-            </div>
-          </li>
-          <li>
-            <div class="skill_box js">
-              <div><span class="skip">JavsScript</span></div>
-              <div><input type="hidden" value="80" /></div>
-            </div>
-          </li>
-          <li>
-            <div class="skill_box jquery">
-              <div><span class="skip">JQUERY</span></div>
-              <div><input type="hidden" value="85" /></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- skill -->
+	<!-- about -->
+	<section class="about" id="about">
+		<div class="wrap">
+			<h2 class="title">ABOUT</h2>
+			<p class="introline">Allow me to introduce myself to you.</p>
+			<div class="about_con">
+				<dl class="my">
+					<dt><span>01</span> MY</dt>
+					<dd>
+						<p><span>NAME</span>김지선</p>
+						<p><span>DATE OF BIRTH</span>1990. 09. 26</p>
+						<p><span>ADDRESS</span>서울시 중랑구</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><span>02</span> CONTRACT</dt>
+					<dd>
+						<p><span>PHONE</span>010-9243-6290</p>
+						<p><span>EMAIL</span><a href="mailto:jsjobrsm@gmail.com">jsjobrsm@gmail.com</a></p>
+						<p></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><span>03</span> PROJECT</dt>
+					<dd>
+						<p><span>2013.11 ~ 2014.06</span>웹 사이트 개발 및 퍼블리싱</p>
+						<p><span>2014.10 ~ 2016.05</span>잡코리아 채용공고 코딩</p>
+						<p><span>2016.06 ~ 2016.11</span>웹 사이트 퍼블리싱</p>
+						<p><span>2017.05 ~ 2017.06</span>퍼블리싱 및 쇼핑몰 유지보수</p>
+						<p><span>2018.01 ~ 2020.02</span>웨딩 사이트/APP 퍼블리싱</p>
+						<p><span>2020.07 ~ 2020.08</span>스포츠 분석사이트 모바일 퍼블리싱</p>
+						<p><span>2020.11 ~ 2020.12</span>현대캐피탈 사내감사시스템 퍼블리싱</p>
+						<p><span>2021.04 ~ 2021.05</span>부산 공공 마켓앱 퍼블리싱</p>
+						<p><span>2021.06 ~ 2021.10</span>현대카드 사이트 리뉴얼</p>
+						<p><span>2021.10 ~ 2022.02</span>LG UPLUS 사이트 리뉴얼</p>
+						<p><span>2022.06 ~ 2023.12</span>한국의학연구소 헬스케어 플랫폼 구축</p>
+						<p><span>2023.06 ~ 2023.12</span>한국의학연구소 헬스케어 플랫폼 구축</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</section>
+	<!-- about -->
 
-    <!-- portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="wrap">
-        <h2 class="title">PORTFOLIO</h2>
-        <p class="introline">See the entire portfolio.</p>
-        <div class="pf_list">
-          <ul>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/noimage_00.jpg" alt="" /></a>
-                <div class="mask">
-                  <h3>LG UPLUS 사이트 리뉴얼</h3>
-                  <p>2021.10.05~2022.02.28</p>
-                  <a id="lguplus" href="#lguplusModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/hdc_00.jpg" alt="hyundaicard" /></a>
-                <div class="mask">
-                  <h3>현대카드 사이트 리뉴얼</h3>
-                  <p>2021.04.01~2021.05.01</p>
-                  <a id="hyundaicard" href="#hyundaicardModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/bsdbt_00.jpg" alt="busandbt" /></a>
-                <div class="mask">
-                  <h3>부산 공공마켓앱</h3>
-                  <p>2021.04.01~2021.05.01</p>
-                  <a id="busandbt" href="#busandbtModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/noimage_00.jpg" alt="" /></a>
-                <div class="mask">
-                  <h3>현대캐피탈 사내 감사시스템</h3>
-                  <p>2020.11.04~2020.12.04</p>
-                  <a id="hyundaicapital" href="#hyundaicapitalModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/sg_00.jpg" alt="sportsguru" /></a>
-                <div class="mask">
-                  <h3>SportsGuru</h3>
-                  <p>2020.07.01~2020.08.01</p>
-                  <a id="sportsguru" href="#sportsguruModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/iwd_00.jpg" alt="iwedding" /></a>
-                <div class="mask">
-                  <h3>아이웨딩</h3>
-                  <p>2018.01.10~2020.02.29</p>
-                  <a id="iwedding" href="#iweddingModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/iwdb_00.jpg" alt="iweddingb" /></a>
-                <div class="mask">
-                  <h3>아이웨딩B</h3>
-                  <p>2018.01.10~2019.12.29</p>
-                  <a id="iweddingb" href="#iweddingbModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/icolor_00.jpg" alt="icolor" /></a>
-                <div class="mask">
-                  <h3>아이컬러</h3>
-                  <p>2018.01.10~2020.02.29</p>
-                  <a id="icolor" href="#icolorModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/dietefit_00.jpg" alt="DIETE fit" /></a>
-                <div class="mask">
-                  <h3>DIETE fit</h3>
-                  <p>2017.05.15~2017.05.19</p>
-                  <a id="dietefit" href="#dietefitModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/vap_00.jpg" alt="VAP" /></a>
-                <div class="mask">
-                  <h3>VAP</h3>
-                  <p>2017.05.08~2017.05.12</p>
-                  <a id="vap" href="#vapModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/item_00.jpg" alt="ITEM" /></a>
-                <div class="mask">
-                  <h3>ITEM</h3>
-                  <p>2016.10.26~2016.11.01</p>
-                  <a id="item" href="#itemModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/hanam_00.jpg" alt="하남 지식산업센터 분양홍보관" /></a>
-                <div class="mask">
-                  <h3>하남 지식산업센터 분양홍보관</h3>
-                  <p>2016.10.14~2016.10.24</p>
-                  <a id="hanam" href="#hanamModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/4dshop_00.jpg" alt="4dshop" /></a>
-                <div class="mask">
-                  <h3>4D SHOP</h3>
-                  <p>2016.09.26~2016.10.06</p>
-                  <a id="fourdshop" href="#fourdshopModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/rollpop_00.jpg" alt="rollpop" /></a>
-                <div class="mask">
-                  <h3>ROLLPOP</h3>
-                  <p>2016.06.20 ~ 2016.07.05</p>
-                  <a id="rollpop" href="#rollpopModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/mot_00.jpg" alt="mot" /></a>
-                <div class="mask">
-                  <h3>MOT</h3>
-                  <p>2016.06.20 ~ 2016.07.05</p>
-                  <a id="mot" href="#motModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-            <li class="pf_frame">
-              <div class="pf_img">
-                <a href="#none"><img src="./image/project/tt_00.jpg" alt="thintree" /></a>
-                <div class="mask">
-                  <h3>ThinkTree</h3>
-                  <p>2014.05.10 ~ 2014.05.30</p>
-                  <a id="thinktree" href="#ttModal" class="more_btn">More</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+	<!-- skill -->
+	<section class="skill" id="skill">
+		<div class="wrap">
+			<h2 class="title">SKILL</h2>
+			<p class="introline">Self-improvement is at the core of success.</p>
+			<ul class="progress_list">
+				<li>
+					<div class="skill_box html">
+						<div><span class="skip">HTML</span></div>
+						<div><input type="hidden" value="100" /></div>
+					</div>
+				</li>
+				<li>
+					<div class="skill_box css">
+						<div><span class="skip">CSS/SCSS</span></div>
+						<div><input type="hidden" value="100" /></div>
+					</div>
+				</li>
+				<li>
+					<div class="skill_box js">
+						<div><span class="skip">JavsScript</span></div>
+						<div><input type="hidden" value="80" /></div>
+					</div>
+				</li>
+				<li>
+					<div class="skill_box jquery">
+						<div><span class="skip">JQUERY</span></div>
+						<div><input type="hidden" value="85" /></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- skill -->
 
-      <!-- lguplus -->
-      <!-- hyundaicapital -->
-      <div id="hyundaicapitalModal">
-        <div class="btn-close-modal close-hyundaicapitalModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
-              <li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
-              <li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">현대캐피탈 사내 감사시스템</li>
-              <li class="pj_period">2020.11.04~2020.12.04</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url"></li>
-              <li class="pj_description">
-                <p class="pj_title">현대캐피탈 사내 감사시스템</p>
-                <p>- HTML5, CSS3</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Web Standard</p>
-                <p class="cl_red">※ 보안 이슈에 따른 소스 제공 불가</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+	<!-- portfolio -->
+	<section class="portfolio" id="portfolio">
+		<div class="wrap">
+			<h2 class="title">PORTFOLIO</h2>
+			<p class="introline">See the entire portfolio.</p>
+			<div class="pf_list">
+				<ul>
+					<!-- <li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/kmimobile_00.jpg" alt="" /></a>
+							<div class="mask">
+								<h3>한국의학연구소 헬스케어 플랫폼 Mobile 사이트</h3>
+								<p>2022.09.15 ~ 2022.11.01</p>
+								<a id="kmiMobile" href="#kmiMobileModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li> -->
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/kmipc_00.jpg" alt="" /></a>
+							<div class="mask">
+								<h3>한국의학연구소 헬스케어 플랫폼 서비스 구축</h3>
+								<p>2022.08.01 ~ 2022.09.01</p>
+								<a id="kmiPc" href="#kmiPcModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/kmiadmin_00.jpg" alt="" /></a>
+							<div class="mask">
+								<h3>한국의학연구소 헬스케어 플랫폼 관리자 사이트</h3>
+								<p>2022.06.01 ~ 2022.07.31</p>
+								<a id="kmiAdmin" href="#kmiAdminModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/noimage_00.jpg" alt="" /></a>
+							<div class="mask">
 
-      <!-- sportsguru -->
-      <div id="sportsguruModal">
-        <div class="btn-close-modal close-sportsguruModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/sg_01.jpg" alt="sportsguru" /></li>
-              <li><img src="./image/project/sg_02.jpg" alt="sportsguru" /></li>
-              <li><img src="./image/project/sg_03.jpg" alt="sportsguru" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">MOBILE</li>
-              <li class="pj_name">sportsguru</li>
-              <li class="pj_period">2020.07.01~2020.08.01</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="https://www.sportsguru.co.kr/" target="_blank">https://www.sportsguru.co.kr/</a></li>
-              <li class="pj_description">
-                <p class="pj_title">스포츠 분석 사이트(스포츠구루) 퍼블리싱</p>
-                <p>- HTML5, CSS3/SCSS</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Adobe XD</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+								<h3>LG UPLUS 사이트 리뉴얼</h3>
+								<p>2021.10.05~2022.02.28</p>
+								<a id="lguplus" href="#lguplusModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/hdc_00.jpg" alt="hyundaicard" /></a>
+							<div class="mask">
+								<h3>현대카드 사이트 리뉴얼</h3>
+								<p>2021.04.01~2021.05.01</p>
+								<a id="hyundaicard" href="#hyundaicardModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/bsdbt_00.jpg" alt="busandbt" /></a>
+							<div class="mask">
+								<h3>부산 공공마켓앱</h3>
+								<p>2021.04.01~2021.05.01</p>
+								<a id="busandbt" href="#busandbtModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/noimage_00.jpg" alt="" /></a>
+							<div class="mask">
+								<h3>현대캐피탈 사내 감사시스템</h3>
+								<p>2020.11.04~2020.12.04</p>
+								<a id="hyundaicapital" href="#hyundaicapitalModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/sg_00.jpg" alt="sportsguru" /></a>
+							<div class="mask">
+								<h3>SportsGuru</h3>
+								<p>2020.07.01~2020.08.01</p>
+								<a id="sportsguru" href="#sportsguruModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/iwd_00.jpg" alt="iwedding" /></a>
+							<div class="mask">
+								<h3>아이웨딩</h3>
+								<p>2018.01.10~2020.02.29</p>
+								<a id="iwedding" href="#iweddingModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/iwdb_00.jpg" alt="iweddingb" /></a>
+							<div class="mask">
+								<h3>아이웨딩B</h3>
+								<p>2018.01.10~2019.12.29</p>
+								<a id="iweddingb" href="#iweddingbModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/icolor_00.jpg" alt="icolor" /></a>
+							<div class="mask">
+								<h3>아이컬러</h3>
+								<p>2018.01.10~2020.02.29</p>
+								<a id="icolor" href="#icolorModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/dietefit_00.jpg" alt="DIETE fit" /></a>
+							<div class="mask">
+								<h3>DIETE fit</h3>
+								<p>2017.05.15~2017.05.19</p>
+								<a id="dietefit" href="#dietefitModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/vap_00.jpg" alt="VAP" /></a>
+							<div class="mask">
+								<h3>VAP</h3>
+								<p>2017.05.08~2017.05.12</p>
+								<a id="vap" href="#vapModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/item_00.jpg" alt="ITEM" /></a>
+							<div class="mask">
+								<h3>ITEM</h3>
+								<p>2016.10.26~2016.11.01</p>
+								<a id="item" href="#itemModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/hanam_00.jpg" alt="하남 지식산업센터 분양홍보관" /></a>
+							<div class="mask">
+								<h3>하남 지식산업센터 분양홍보관</h3>
+								<p>2016.10.14~2016.10.24</p>
+								<a id="hanam" href="#hanamModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/4dshop_00.jpg" alt="4dshop" /></a>
+							<div class="mask">
+								<h3>4D SHOP</h3>
+								<p>2016.09.26~2016.10.06</p>
+								<a id="fourdshop" href="#fourdshopModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/rollpop_00.jpg" alt="rollpop" /></a>
+							<div class="mask">
+								<h3>ROLLPOP</h3>
+								<p>2016.06.20 ~ 2016.07.05</p>
+								<a id="rollpop" href="#rollpopModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/mot_00.jpg" alt="mot" /></a>
+							<div class="mask">
+								<h3>MOT</h3>
+								<p>2016.06.20 ~ 2016.07.05</p>
+								<a id="mot" href="#motModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+					<li class="pf_frame">
+						<div class="pf_img">
+							<a href="javascript:;"><img src="./image/project/tt_00.jpg" alt="thintree" /></a>
+							<div class="mask">
+								<h3>ThinkTree</h3>
+								<p>2014.05.10 ~ 2014.05.30</p>
+								<a id="thinktree" href="#ttModal" class="more_btn">More</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-      <!-- Iwedding -->
-      <div id="iweddingModal">
-        <div class="btn-close-modal close-iweddingModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/iwd_01.jpg" alt="iwedding" /></li>
-              <li><img src="./image/project/iwd_02.jpg" alt="iwedding" /></li>
-              <li><img src="./image/project/iwd_03.jpg" alt="icolor" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC / MOBILE / APP</li>
-              <li class="pj_name">아이웨딩</li>
-              <li class="pj_period">2018.01.10~2020.02.29</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="https://www.ibrandplus.co.kr/brandplus" target="_blank">https://www.ibrandplus.co.kr/brandplus</a></li>
-              <li class="pj_description">
-                <p class="pj_title">사내 운영 페이지 및 어플리케이션 전체 퍼블리싱</p>
-                <p>- HTML5, CSS3/SCSS</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop, Adobe XD</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+		<!--  = Modal -->
+		<!-- + kmiMobile -->
+		<!-- <div id="kmiMobileModal">
+			<div class="btn-close-modal close-kmiMobileModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/noimage.jpg" alt="kmipc" /></li>
+						<li><img src="./image/project/noimage.jpg" alt="kmipc" /></li>
+						<li><img src="./image/project/noimage.jpg" alt="kmipc" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">Mobile</li>
+						<li class="pj_name">(재)한국의학연구소 헬스케어 플랫폼 서비스 페이지 </li>
+						<li class="pj_period">2022.06.01 ~ 2022.07.31</li>
+						<li class="pj_percent">
+							<p><span class="item_pct" style="width:100%">100%</span></p>
+						</li>
+						<li class="pj_url"></li>
+						<li class="pj_description">
+							<p class="pj_title">헬스케어 플랫폼 Mobile 페이지 구축</p>
+							<p>- HTML5, SCSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Web Standard</p>
+							<p>- UI Component Module화 작업</p>
+							<p class="cl_red">※ 보안 이슈에 따른 소스 제공 불가</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+		<!-- + kmiPc -->
+		<div id="kmiPcModal">
+			<div class="btn-close-modal close-kmiPcModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/kmiweb_01.jpg" alt="kmi" /></li>
+						<li><img src="./image/project/kmiweb_03.jpg" alt="kmi" /></li>
+						<li><img src="./image/project/kmiweb_02.jpg" alt="kmi" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">(재)한국의학연구소 헬스케어 플랫폼 서비스 페이지 </li>
+						<li class="pj_period">2022.06.01 ~ 2022.07.31</li>
+						<li class="pj_percent">
+							<p><span class="item_pct" style="width:100%">100%</span></p>
+						</li>
+						<li class="pj_url"></li>
+						<li class="pj_description">
+							<p class="pj_title">헬스케어 플랫폼 PC 페이지 구축</p>
+							<p>- HTML5, SCSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Web Standard</p>
+							<p>- UI Component Module화 작업</p>
+							<p class="cl_red">※ 보안 이슈에 따른 소스 제공 불가</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      <!-- iweddingbModal -->
-      <div id="iweddingbModal">
-        <div class="btn-close-modal close-iweddingbModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/iwdb_01.jpg" alt="iweddingb" /></li>
-              <li><img src="./image/project/iwdb_02.jpg" alt="iweddingb" /></li>
-              <li><img src="./image/project/iwdb_03.jpg" alt="iweddingb" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC / MOBILE</li>
-              <li class="pj_name">아이웨딩B</li>
-              <li class="pj_period">2018.01.10~2020.02.29</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="http://withmini.iwedding.co.kr/" target="_blank">http://withmini.iwedding.co.kr/</a></li>
-              <li class="pj_description">
-                <p class="pj_title">아이웨딩 입점스토어 페이지 PC/MOBILE 퍼블리싱</p>
-                <p>- HTML5, CSS</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+		<!-- + kmiAdmin -->
+		<div id="kmiAdminModal">
+			<div class="btn-close-modal close-kmiAdminModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/kmiadmin_01.jpg" alt="kmiadmin" /></li>
+						<li><img src="./image/project/kmiadmin_02.jpg" alt="kmiadmin" /></li>
+						<li><img src="./image/project/kmiadmin_03.jpg" alt="kmiadmin" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">(재)한국의학연구소 헬스케어 플랫폼 서비스 관리자 페이지 </li>
+						<li class="pj_period">2022.06.01 ~ 2022.07.31</li>
+						<li class="pj_percent">
+							<p><span class="item_pct" style="width:100%">60%</span></p>
+						</li>
+						<li class="pj_url"></li>
+						<li class="pj_description">
+							<p class="pj_title">헬스케어 플랫폼 관리자 페이지 구축</p>
+							<p>- HTML5, SCSS</p>
+							<p>- jQuery, Javascript, Chart.js</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Web Standard</p>
+							<p>- UI Component Module화 작업</p>
+							<p>- Coding Convention Guide 제공</p>
+							<p class="cl_red">※ 보안 이슈에 따른 소스 제공 불가</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      <!-- icolor -->
-      <div id="icolorModal">
-        <div class="btn-close-modal close-icolorModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/icolor_01.jpg" alt="icolor" /></li>
-              <li><img src="./image/project/icolor_02.jpg" alt="icolor" /></li>
-              <li><img src="./image/project/icolor_03.jpg" alt="icolor" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">APP</li>
-              <li class="pj_name">아이컬러</li>
-              <li class="pj_period">2019.01.01~2020.02.29</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url">
-                <a href="https://play.google.com/store/apps/details?id=com.ifamilysc.arda" target="_blank">Android</a>,
-                <a href="https://apps.apple.com/kr/app/%EC%95%84%EC%9D%B4%EC%BB%AC%EB%9F%AC-%EA%B5%AD%EB%82%B4-%EC%9C%A0%EC%9D%BC-%ED%8D%BC%EC%8A%A4%EB%84%90%EC%BB%AC%EB%9F%AC-%EC%A7%84%EB%8B%A8-%EC%95%B1/id1207719454" target="_blank">iOS</a>
-              </li>
-              <li class="pj_description">
-                <p class="pj_title">아이컬러 Hybrid App 리뉴얼 퍼블리싱</p>
-                <p>- HTML5, CSS/SCSS</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Web Standard</p>
-                <p>- Design Tool : Zeplin</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+		<!-- lguplus -->
+		<div id="lguplusModal">
+			<div class="btn-close-modal close-lguplusModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
+						<li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
+						<li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC, Mobile</li>
+						<li class="pj_name">LG UPLUS 사이트 리뉴얼</li>
+						<li class="pj_period">2021.10.05~2022.02.28</li>
+						<li class="pj_percent">
+							<p><span class="item_pct" style="width:60%">60%</span></p>
+						</li>
+						<li class="pj_url"></li>
+						<li class="pj_description">
+							<p class="pj_title">LG UPLUS 사이트 리뉴얼</p>
+							<p>- HTML5, SCSS</p>
+							<p>- jQuery, Javascript, Vue.js</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Web Standard, Web Accessiblilty</p>
+							<p class="cl_red">※ 보안 이슈에 따른 소스 제공 불가</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      <!-- DIETE fit -->
-      <div id="dietefitModal">
-        <div class="btn-close-modal close-dietefitModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/dietefit_01.jpg" alt="DIETE fit" /></li>
-              <li><img src="./image/project/dietefit_01.jpg" alt="DIETE fit" /></li>
-              <li><img src="./image/project/dietefit_01.jpg" alt="DIETE fit" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">동국제약 - DIETE fit</li>
-              <li class="pj_period">2017.05.15~2017.05.19</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="project/dietefit/index.html" target="_blank">http://dietefit.co.kr/main/</a></li>
-              <li class="pj_description">
-                <p class="pj_title">신규 홈페이지 제작 - PC버전</p>
-                <p>- 전체 퍼블리싱 단독작업</p>
-                <p>- HTML, CSS</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+		<!-- hyundaicapital -->
+		<div id="hyundaicapitalModal">
+			<div class="btn-close-modal close-hyundaicapitalModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
+						<li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
+						<li><img src="./image/project/noimage.jpg" alt="hyundaicapital" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">현대캐피탈 사내 감사시스템</li>
+						<li class="pj_period">2020.11.04~2020.12.04</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url"></li>
+						<li class="pj_description">
+							<p class="pj_title">현대캐피탈 사내 감사시스템</p>
+							<p>- HTML5, CSS3</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Web Standard</p>
+							<p class="cl_red">※ 보안 이슈에 따른 소스 제공 불가</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      <!-- VAP -->
-      <div id="vapModal">
-        <div class="btn-close-modal close-vapModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/vap_01.jpg" alt="VAP" /></li>
-              <li><img src="./image/project/vap_02.jpg" alt="VAP" /></li>
-              <li><img src="./image/project/vap_03.jpg" alt="VAP" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">VAP</li>
-              <li class="pj_period">2017.05.08~2017.05.12</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="project/vap/index.html" target="_blank">http://vapnutrition.com</a></li>
-              <li class="pj_description">
-                <p class="pj_title">이벤트 페이지 제작</p>
-                <p>- HTML, CSS</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- ITEM -->
-      <div id="itemModal">
-        <div class="btn-close-modal close-itemModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/item_01.jpg" alt="ITEM" /></li>
-              <li><img src="./image/project/item_02.jpg" alt="ITEM" /></li>
-              <li><img src="./image/project/item_03.jpg" alt="ITEM" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">ITEM</li>
-              <li class="pj_period">2016.10.26~2016.11.01</li>
-              <li class="pj_percent">
-                <p><span class="item_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="http://www.it-em.co.kr" target="_blank">http://www.it-em.co.kr</a></li>
-              <li class="pj_description">
-                <p class="pj_title">신규 홈페이지 제작</p>
-                <p>- HTML, CSS</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- // ITEM -->
-      <!-- HANAM -->
-      <div id="hanamModal">
-        <div class="btn-close-modal close-hanamModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/hanam_01.jpg" alt="하남 지식산업센터 분양홍보관" /></li>
-              <li><img src="./image/project/hanam_02.jpg" alt="하남 지식산업센터 분양홍보관" /></li>
-              <li><img src="./image/project/hanam_03.jpg" alt="하남 지식산업센터 분양홍보관" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">하남 지식산업센터 분양홍보관</li>
-              <li class="pj_period">2016.10.14 ~ 2016.10.24</li>
-              <li class="pj_percent">
-                <p><span class="hanam_pct">90%</span></p>
-              </li>
-              <li class="pj_url"><a href="project/hanam/index.html" target="_blank">http://www.하남지식산업센터분양홍보관.com</a></li>
-              <li class="pj_description">
-                <p class="pj_title">신규 홈페이지 제작</p>
-                <p>- 메인을 제외한 서브페이지 퍼블리싱 작업</p>
-                <p>- HTML, CSS 코딩</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- // HANAM -->
-      <!-- 4D SHOP -->
-      <div id="fourdshopModal">
-        <div class="btn-close-modal close-fourdshopModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/4dshop_01.jpg" alt="4D SHOP" /></li>
-              <li><img src="./image/project/4dshop_02.jpg" alt="4D SHOP" /></li>
-              <li><img src="./image/project/4dshop_03.jpg" alt="4D SHOP" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">4D SHOP</li>
-              <li class="pj_period">2016.08.25 ~ 2016.09.07</li>
-              <li class="pj_percent">
-                <p><span class="fourdshop_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="project/4dshop/index.html" target="_blank">http://www.4dshopinc.com</a></li>
-              <li class="pj_description">
-                <p class="pj_title">신규 홈페이지 제작</p>
-                <p>- 전체 퍼블리싱 단독작업</p>
-                <p>- HTML, CSS 코딩</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- // 4D SHOP -->
-      <!-- ROLLPOP -->
-      <div id="rollpopModal">
-        <div class="btn-close-modal close-rollpopModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/rollpop_01.jpg" alt="ROLLPOP" /></li>
-              <li><img src="./image/project/rollpop_02.jpg" alt="ROLLPOP" /></li>
-              <li><img src="./image/project/rollpop_03.jpg" alt="ROLLPOP" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">ROLLPOP</li>
-              <li class="pj_period">2016.08.25 ~ 2016.09.07</li>
-              <li class="pj_percent">
-                <p><span class="rollpop_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="project/rollpop/index.html" target="_blank">http://www.rollpop.co.kr</a></li>
-              <li class="pj_description">
-                <p class="pj_title">신규 홈페이지 제작</p>
-                <p>- HTML, CSS 코딩</p>
-                <p>- jQuery, Javascript</p>
-                <p>- jQuery plugin 커스터마이징</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- // ROLLPOP -->
-      <!-- MOT -->
-      <div id="motModal">
-        <div class="btn-close-modal close-motModalmotModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/mot_01.jpg" alt="MOT" /></li>
-              <li><img src="./image/project/mot_02.jpg" alt="MOT" /></li>
-              <li><img src="./image/project/mot_03.jpg" alt="MOT" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">MOT</li>
-              <li class="pj_period">2016.06.20 ~ 2016.07.05</li>
-              <li class="pj_percent">
-                <p><span class="mot_pct"> 40%</span></p>
-              </li>
-              <li class="pj_url"><a href="http://www.k-mot.com/sub/outline.php" target="_blank">http://www.k-mot.com</a></li>
-              <li class="pj_description">
-                <p class="pj_title">신규 홈페이지 제작</p>
-                <p>- 퍼블리싱 공동작업</p>
-                <p>- HTML, CSS 코딩</p>
-                <p>- jQuery, Javascript</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-                <p class="pj_title">작업페이지</p>
-                <p>- 개요</p>
-                <p>- 주요강사진</p>
-                <p>- 기술경영 썸머스쿨 프로그램</p>
-                <p>- 기술경영Family 기업</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- ThinkTree -->
-      <div id="ttModal">
-        <div class="btn-close-modal close-ttModal">
-          <a href=""><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
-        </div>
-        <div class="popup_layer">
-          <div class="pop_img">
-            <ul>
-              <li><img src="./image/project/tt_01.jpg" alt="ThinkTree" /></li>
-              <li><img src="./image/project/tt_02.jpg" alt="ThinkTree" /></li>
-              <li><img src="./image/project/tt_03.jpg" alt="ThinkTree" /></li>
-            </ul>
-          </div>
-          <div class="pop_txt">
-            <ul>
-              <li class="pj_sort">PC</li>
-              <li class="pj_name">ThinkTree</li>
-              <li class="pj_period">2014.05.10 ~ 2014.05.25</li>
-              <li class="pj_percent">
-                <p><span class="tt_pct">100%</span></p>
-              </li>
-              <li class="pj_url"><a href="project/thinktree/index.html" target="_blank">http://www.think-tree.co.kr</a></li>
-              <li class="pj_description">
-                <p class="pj_title">사내 홈페이지 신규 퍼블리싱</p>
-                <p>- 전체 퍼블리싱 단독작업</p>
-                <p>- HTML, CSS 코딩</p>
-                <p>- jQuery, Javascript</p>
-                <p>- Cross Browsing, Web Standard</p>
-                <p>- Design Tool : Photoshop</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio -->
+		<!-- sportsguru -->
+		<div id="sportsguruModal">
+			<div class="btn-close-modal close-sportsguruModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/sg_01.jpg" alt="sportsguru" /></li>
+						<li><img src="./image/project/sg_02.jpg" alt="sportsguru" /></li>
+						<li><img src="./image/project/sg_03.jpg" alt="sportsguru" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">MOBILE</li>
+						<li class="pj_name">sportsguru</li>
+						<li class="pj_period">2020.07.01~2020.08.01</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="https://www.sportsguru.co.kr/" target="_blank">https://www.sportsguru.co.kr/</a>
+						</li>
+						<li class="pj_description">
+							<p class="pj_title">스포츠 분석 사이트(스포츠구루) 퍼블리싱</p>
+							<p>- HTML5, CSS3/SCSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Adobe XD</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-    <!-- contact -->
-    <section class="contact" id="contact">
-      <div class="wrap">
-        <h2 class="title">CONTACT</h2>
-        <p class="introline">Please feel free to contact me</p>
-        <ul class="info">
-          <li class="phone">
-            <span>PHONE</span>
-            <a href="tel:010-9243-6290">010-9243-6290</a>
-          </li>
-          <li class="email">
-            <span>EMAIL</span>
-            <a href="mailto:jsjobrsm@gmail.com">jsjobrsm@gmail.com</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- contact -->
+		<!-- Iwedding -->
+		<div id="iweddingModal">
+			<div class="btn-close-modal close-iweddingModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/iwd_01.jpg" alt="iwedding" /></li>
+						<li><img src="./image/project/iwd_02.jpg" alt="iwedding" /></li>
+						<li><img src="./image/project/iwd_03.jpg" alt="icolor" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC / MOBILE / APP</li>
+						<li class="pj_name">아이웨딩</li>
+						<li class="pj_period">2018.01.10~2020.02.29</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="https://www.ibrandplus.co.kr/brandplus"
+								target="_blank">https://www.ibrandplus.co.kr/brandplus</a></li>
+						<li class="pj_description">
+							<p class="pj_title">사내 운영 페이지 및 어플리케이션 전체 퍼블리싱</p>
+							<p>- HTML5, CSS3/SCSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop, Adobe XD</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-    <footer class="footer">
-      <div class="wrap">
-        <p>Copyright © Kim Jiseon. All rights reserved.</p>
-      </div>
-    </footer>
+		<!-- iweddingbModal -->
+		<div id="iweddingbModal">
+			<div class="btn-close-modal close-iweddingbModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/iwdb_01.jpg" alt="iweddingb" /></li>
+						<li><img src="./image/project/iwdb_02.jpg" alt="iweddingb" /></li>
+						<li><img src="./image/project/iwdb_03.jpg" alt="iweddingb" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC / MOBILE</li>
+						<li class="pj_name">아이웨딩B</li>
+						<li class="pj_period">2018.01.10~2020.02.29</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="http://withmini.iwedding.co.kr/"
+								target="_blank">http://withmini.iwedding.co.kr/</a></li>
+						<li class="pj_description">
+							<p class="pj_title">아이웨딩 입점스토어 페이지 PC/MOBILE 퍼블리싱</p>
+							<p>- HTML5, CSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-    <script>
-      // Scroll Animation
-      window.sr = ScrollReveal({
-        reset: true,
-        duration: 500,
-      });
+		<!-- icolor -->
+		<div id="icolorModal">
+			<div class="btn-close-modal close-icolorModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/icolor_01.jpg" alt="icolor" /></li>
+						<li><img src="./image/project/icolor_02.jpg" alt="icolor" /></li>
+						<li><img src="./image/project/icolor_03.jpg" alt="icolor" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">APP</li>
+						<li class="pj_name">아이컬러</li>
+						<li class="pj_period">2019.01.01~2020.02.29</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url">
+							<a href="https://play.google.com/store/apps/details?id=com.ifamilysc.arda" target="_blank">Android</a>,
+							<a href="https://apps.apple.com/kr/app/%EC%95%84%EC%9D%B4%EC%BB%AC%EB%9F%AC-%EA%B5%AD%EB%82%B4-%EC%9C%A0%EC%9D%BC-%ED%8D%BC%EC%8A%A4%EB%84%90%EC%BB%AC%EB%9F%AC-%EC%A7%84%EB%8B%A8-%EC%95%B1/id1207719454"
+								target="_blank">iOS</a>
+						</li>
+						<li class="pj_description">
+							<p class="pj_title">아이컬러 Hybrid App 리뉴얼 퍼블리싱</p>
+							<p>- HTML5, CSS/SCSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Web Standard</p>
+							<p>- Design Tool : Zeplin</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      sr.reveal('.about_con dl:first-child', {});
-      sr.reveal('.about_con dl:nth-child(2)', {
-        delay: 150,
-      });
-      sr.reveal('.about_con dl:nth-child(3)', {
-        delay: 200,
-      });
+		<!-- DIETE fit -->
+		<div id="dietefitModal">
+			<div class="btn-close-modal close-dietefitModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/dietefit_01.jpg" alt="DIETE fit" /></li>
+						<li><img src="./image/project/dietefit_01.jpg" alt="DIETE fit" /></li>
+						<li><img src="./image/project/dietefit_01.jpg" alt="DIETE fit" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">동국제약 - DIETE fit</li>
+						<li class="pj_period">2017.05.15~2017.05.19</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="project/dietefit/index.html" target="_blank">http://dietefit.co.kr/main/</a>
+						</li>
+						<li class="pj_description">
+							<p class="pj_title">신규 홈페이지 제작 - PC버전</p>
+							<p>- 전체 퍼블리싱 단독작업</p>
+							<p>- HTML, CSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      /* 	sr.reveal(".display_box .movie_wrap", {delay: 200});
+		<!-- VAP -->
+		<div id="vapModal">
+			<div class="btn-close-modal close-vapModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/vap_01.jpg" alt="VAP" /></li>
+						<li><img src="./image/project/vap_02.jpg" alt="VAP" /></li>
+						<li><img src="./image/project/vap_03.jpg" alt="VAP" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">VAP</li>
+						<li class="pj_period">2017.05.08~2017.05.12</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="project/vap/index.html" target="_blank">http://vapnutrition.com</a></li>
+						<li class="pj_description">
+							<p class="pj_title">이벤트 페이지 제작</p>
+							<p>- HTML, CSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- ITEM -->
+		<div id="itemModal">
+			<div class="btn-close-modal close-itemModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/item_01.jpg" alt="ITEM" /></li>
+						<li><img src="./image/project/item_02.jpg" alt="ITEM" /></li>
+						<li><img src="./image/project/item_03.jpg" alt="ITEM" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">ITEM</li>
+						<li class="pj_period">2016.10.26~2016.11.01</li>
+						<li class="pj_percent">
+							<p><span class="item_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="http://www.it-em.co.kr" target="_blank">http://www.it-em.co.kr</a></li>
+						<li class="pj_description">
+							<p class="pj_title">신규 홈페이지 제작</p>
+							<p>- HTML, CSS</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // ITEM -->
+		<!-- HANAM -->
+		<div id="hanamModal">
+			<div class="btn-close-modal close-hanamModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/hanam_01.jpg" alt="하남 지식산업센터 분양홍보관" /></li>
+						<li><img src="./image/project/hanam_02.jpg" alt="하남 지식산업센터 분양홍보관" /></li>
+						<li><img src="./image/project/hanam_03.jpg" alt="하남 지식산업센터 분양홍보관" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">하남 지식산업센터 분양홍보관</li>
+						<li class="pj_period">2016.10.14 ~ 2016.10.24</li>
+						<li class="pj_percent">
+							<p><span class="hanam_pct">90%</span></p>
+						</li>
+						<li class="pj_url"><a href="project/hanam/index.html" target="_blank">http://www.하남지식산업센터분양홍보관.com</a></li>
+						<li class="pj_description">
+							<p class="pj_title">신규 홈페이지 제작</p>
+							<p>- 메인을 제외한 서브페이지 퍼블리싱 작업</p>
+							<p>- HTML, CSS 코딩</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // HANAM -->
+		<!-- 4D SHOP -->
+		<div id="fourdshopModal">
+			<div class="btn-close-modal close-fourdshopModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/4dshop_01.jpg" alt="4D SHOP" /></li>
+						<li><img src="./image/project/4dshop_02.jpg" alt="4D SHOP" /></li>
+						<li><img src="./image/project/4dshop_03.jpg" alt="4D SHOP" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">4D SHOP</li>
+						<li class="pj_period">2016.08.25 ~ 2016.09.07</li>
+						<li class="pj_percent">
+							<p><span class="fourdshop_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="project/4dshop/index.html" target="_blank">http://www.4dshopinc.com</a></li>
+						<li class="pj_description">
+							<p class="pj_title">신규 홈페이지 제작</p>
+							<p>- 전체 퍼블리싱 단독작업</p>
+							<p>- HTML, CSS 코딩</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // 4D SHOP -->
+		<!-- ROLLPOP -->
+		<div id="rollpopModal">
+			<div class="btn-close-modal close-rollpopModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/rollpop_01.jpg" alt="ROLLPOP" /></li>
+						<li><img src="./image/project/rollpop_02.jpg" alt="ROLLPOP" /></li>
+						<li><img src="./image/project/rollpop_03.jpg" alt="ROLLPOP" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">ROLLPOP</li>
+						<li class="pj_period">2016.08.25 ~ 2016.09.07</li>
+						<li class="pj_percent">
+							<p><span class="rollpop_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="project/rollpop/index.html" target="_blank">http://www.rollpop.co.kr</a></li>
+						<li class="pj_description">
+							<p class="pj_title">신규 홈페이지 제작</p>
+							<p>- HTML, CSS 코딩</p>
+							<p>- jQuery, Javascript</p>
+							<p>- jQuery plugin 커스터마이징</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // ROLLPOP -->
+		<!-- MOT -->
+		<div id="motModal">
+			<div class="btn-close-modal close-motModalmotModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/mot_01.jpg" alt="MOT" /></li>
+						<li><img src="./image/project/mot_02.jpg" alt="MOT" /></li>
+						<li><img src="./image/project/mot_03.jpg" alt="MOT" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">MOT</li>
+						<li class="pj_period">2016.06.20 ~ 2016.07.05</li>
+						<li class="pj_percent">
+							<p><span class="mot_pct"> 40%</span></p>
+						</li>
+						<li class="pj_url"><a href="http://www.k-mot.com/sub/outline.php" target="_blank">http://www.k-mot.com</a>
+						</li>
+						<li class="pj_description">
+							<p class="pj_title">신규 홈페이지 제작</p>
+							<p>- 퍼블리싱 공동작업</p>
+							<p>- HTML, CSS 코딩</p>
+							<p>- jQuery, Javascript</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+							<p class="pj_title">작업페이지</p>
+							<p>- 개요</p>
+							<p>- 주요강사진</p>
+							<p>- 기술경영 썸머스쿨 프로그램</p>
+							<p>- 기술경영Family 기업</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- ThinkTree -->
+		<div id="ttModal">
+			<div class="btn-close-modal close-ttModal">
+				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
+			</div>
+			<div class="popup_layer">
+				<div class="pop_img">
+					<ul>
+						<li><img src="./image/project/tt_01.jpg" alt="ThinkTree" /></li>
+						<li><img src="./image/project/tt_02.jpg" alt="ThinkTree" /></li>
+						<li><img src="./image/project/tt_03.jpg" alt="ThinkTree" /></li>
+					</ul>
+				</div>
+				<div class="pop_txt">
+					<ul>
+						<li class="pj_sort">PC</li>
+						<li class="pj_name">ThinkTree</li>
+						<li class="pj_period">2014.05.10 ~ 2014.05.25</li>
+						<li class="pj_percent">
+							<p><span class="tt_pct">100%</span></p>
+						</li>
+						<li class="pj_url"><a href="project/thinktree/index.html" target="_blank">http://www.think-tree.co.kr</a>
+						</li>
+						<li class="pj_description">
+							<p class="pj_title">사내 홈페이지 신규 퍼블리싱</p>
+							<p>- 전체 퍼블리싱 단독작업</p>
+							<p>- HTML, CSS 코딩</p>
+							<p>- jQuery, Javascript</p>
+							<p>- Cross Browsing, Web Standard</p>
+							<p>- Design Tool : Photoshop</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- portfolio -->
 
-		sr.reveal(".search_box .txt_wrap", {delay: 500});
-		sr.reveal(".search_box .movie_wrap", {delay: 700});
+	<!-- contact -->
+	<section class="contact" id="contact">
+		<div class="wrap">
+			<h2 class="title">CONTACT</h2>
+			<p class="introline">Please feel free to contact me</p>
+			<ul class="info">
+				<li class="phone">
+					<span>PHONE</span>
+					<a href="tel:010-9243-6290">010-9243-6290</a>
+				</li>
+				<li class="email">
+					<span>EMAIL</span>
+					<a href="mailto:jsjobrsm@gmail.com">jsjobrsm@gmail.com</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- contact -->
 
-		sr.reveal(".msg_box .txt_wrap");
-		sr.reveal(".msg_box .movie_wrap", {delay: 400});
+	<footer class="footer">
+		<div class="wrap">
+			<p>Copyright © Kim Jiseon. All rights reserved.</p>
+		</div>
+	</footer>
 
-		sr.reveal(".prm_box .txt_wrap");
-		sr.reveal(".prm_box .movie_wrap", {delay: 400}); */
-    </script>
-  </body>
+	<script>
+		// Scroll Animation
+		window.sr = ScrollReveal({
+			reset: true,
+			duration: 500,
+		});
+
+		sr.reveal('.about_con dl:first-child', {});
+		sr.reveal('.about_con dl:nth-child(2)', {
+			delay: 150,
+		});
+		sr.reveal('.about_con dl:nth-child(3)', {
+			delay: 200,
+		});
+
+		/* 	sr.reveal(".display_box .movie_wrap", {delay: 200});
+
+	sr.reveal(".search_box .txt_wrap", {delay: 500});
+	sr.reveal(".search_box .movie_wrap", {delay: 700});
+
+	sr.reveal(".msg_box .txt_wrap");
+	sr.reveal(".msg_box .movie_wrap", {delay: 400});
+
+	sr.reveal(".prm_box .txt_wrap");
+	sr.reveal(".prm_box .movie_wrap", {delay: 400}); */
+	</script>
+</body>
+
 </html>
