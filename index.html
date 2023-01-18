@@ -23,23 +23,7 @@
 	<link rel="stylesheet" href="./css/style.css" />
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="./js/scrollreveal.js"></script>
-	<script src="./js/animatedModal.min.js"></script>
-	<script defer src="./js/style.js"></script>
 
-	<script>
-		$(function () {
-			var videoFunc = function () {
-				var video = $('.visual_video');
-				var videoH = video.height();
-				video.closest('div').css('height', videoH);
-			};
-			$(window).resize(videoFunc);
-			$(document).ready(videoFunc);
-
-			$('.mask').click(function () { });
-		});
-	</script>
 </head>
 
 <body>
@@ -70,8 +54,8 @@
 
 	<section class="visual" id="visual">
 		<div class="wrap">
-			<video class="visual_video" muted autoplay loop playsinline>
-				<source src="./image/video.mp4" type="video/mp4" />
+			<video muted playsinline loop autoplay class="main-video lazy">
+				<source src="./image/video.mp4" type="video/mp4">
 			</video>
 		</div>
 	</section>
@@ -394,7 +378,7 @@
 			</div>
 		</div> -->
 		<!-- + kmiPc -->
-		<div id="kmiPcModal">
+		<div id="kmiPcModal" class="pf-layer">
 			<div class="btn-close-modal close-kmiPcModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -430,7 +414,7 @@
 		</div>
 
 		<!-- + kmiAdmin -->
-		<div id="kmiAdminModal">
+		<div id="kmiAdminModal" class="pf-layer">
 			<div class="btn-close-modal close-kmiAdminModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -466,8 +450,9 @@
 			</div>
 		</div>
 
+
 		<!-- lguplus -->
-		<div id="lguplusModal">
+		<div id="lguplusModal" class="pf-layer">
 			<div class="btn-close-modal close-lguplusModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -502,7 +487,7 @@
 		</div>
 
 		<!-- hyundaicapital -->
-		<div id="hyundaicapitalModal">
+		<div id="hyundaicapitalModal" class="pf-layer">
 			<div class="btn-close-modal close-hyundaicapitalModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -537,7 +522,7 @@
 		</div>
 
 		<!-- sportsguru -->
-		<div id="sportsguruModal">
+		<div id="sportsguruModal" class="pf-layer">
 			<div class="btn-close-modal close-sportsguruModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -573,7 +558,7 @@
 		</div>
 
 		<!-- Iwedding -->
-		<div id="iweddingModal">
+		<div id="iweddingModal" class="pf-layer">
 			<div class="btn-close-modal close-iweddingModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -609,7 +594,7 @@
 		</div>
 
 		<!-- iweddingbModal -->
-		<div id="iweddingbModal">
+		<div id="iweddingbModal" class="pf-layer">
 			<div class="btn-close-modal close-iweddingbModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -645,7 +630,7 @@
 		</div>
 
 		<!-- icolor -->
-		<div id="icolorModal">
+		<div id="icolorModal" class="pf-layer">
 			<div class="btn-close-modal close-icolorModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -684,7 +669,7 @@
 		</div>
 
 		<!-- DIETE fit -->
-		<div id="dietefitModal">
+		<div id="dietefitModal" class="pf-layer">
 			<div class="btn-close-modal close-dietefitModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -721,7 +706,7 @@
 		</div>
 
 		<!-- VAP -->
-		<div id="vapModal">
+		<div id="vapModal" class="pf-layer">
 			<div class="btn-close-modal close-vapModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -755,7 +740,7 @@
 			</div>
 		</div>
 		<!-- ITEM -->
-		<div id="itemModal">
+		<div id="itemModal" class="pf-layer">
 			<div class="btn-close-modal close-itemModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -790,7 +775,7 @@
 		</div>
 		<!-- // ITEM -->
 		<!-- HANAM -->
-		<div id="hanamModal">
+		<div id="hanamModal" class="pf-layer">
 			<div class="btn-close-modal close-hanamModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -826,7 +811,7 @@
 		</div>
 		<!-- // HANAM -->
 		<!-- 4D SHOP -->
-		<div id="fourdshopModal">
+		<div id="fourdshopModal" class="pf-layer">
 			<div class="btn-close-modal close-fourdshopModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -862,7 +847,7 @@
 		</div>
 		<!-- // 4D SHOP -->
 		<!-- ROLLPOP -->
-		<div id="rollpopModal">
+		<div id="rollpopModal" class="pf-layer">
 			<div class="btn-close-modal close-rollpopModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -897,7 +882,7 @@
 		</div>
 		<!-- // ROLLPOP -->
 		<!-- MOT -->
-		<div id="motModal">
+		<div id="motModal" class="pf-layer">
 			<div class="btn-close-modal close-motModalmotModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -937,7 +922,7 @@
 			</div>
 		</div>
 		<!-- ThinkTree -->
-		<div id="ttModal">
+		<div id="ttModal" class="pf-layer">
 			<div class="btn-close-modal close-ttModal">
 				<a href="javascript:;"><img src="./image/pop_close_btn.png" alt="팝업 닫기" /></a>
 			</div>
@@ -999,7 +984,13 @@
 		</div>
 	</footer>
 
+
+	<script src="./js/scrollreveal.js"></script>
+	<script src="./js/animatedModal.min.js"></script>
+	<script defer src="./js/style.js"></script>
 	<script>
+
+
 		// Scroll Animation
 		window.sr = ScrollReveal({
 			reset: true,
