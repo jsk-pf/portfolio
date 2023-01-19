@@ -735,7 +735,7 @@ section.abuot {
 
 .popup_layer {
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 700px;
 }
 
 .pop_img li img {
@@ -805,7 +805,6 @@ section.abuot {
   position: relative;
 }
 .pop_img ul li {
-  position: absolute;
   left: 0px;
   top: 0px;
   float: left;
@@ -833,6 +832,14 @@ section.abuot {
     flex-direction: column;
     flex: 1 1 100%;
     margin: 80px 20px 20px 20px;
+    min-height: initial;
+  }
+  .popup_layer .pop_img {
+    padding-bottom: calc(50% + 20px);
+    overflow: hidden;
+  }
+  .popup_layer .pop_img img {
+    height: inherit;
   }
   .popup_layer > div {
     flex: 0 0 50%;

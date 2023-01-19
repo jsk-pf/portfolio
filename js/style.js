@@ -73,16 +73,19 @@ function skillAnimation() {
 /* poftfolio img */
 function poftfolioImg() {
   $(window).resize(function () {
-    let imgHeight = $('.pop_img li').height();
-    $('.pop_img ul').height(imgHeight);
+    let imgHeight = $('.pop_img img').height();
+    // $('.pop_img ul').height(imgHeight);
   });
 }
 
 $('.pf_img, .more_btn').click(function () {
   let pfTarget = $(this).attr('id');
+
   $(`#${pfTarget}`).animatedModal({ modalTarget: `${pfTarget}Modal` });
-  let imgHeight = $('.pop_img li').height();
-  $('.pop_img ul').height(imgHeight);
+
+  let imgHeight = $(`${pfTarget}Modal`).find('.pop_img img').height();
+  $('.pop_img img').height(imgHeight);
+  $('.pop_img li').css('position', 'absolute');
   let select = $(this).attr('href');
   let $imgList = $(select).find('.pop_img li');
   let nImgCount = $imgList.children().length;
@@ -103,10 +106,6 @@ $('.pf_img, .more_btn').click(function () {
 
   // stop image
   $('.btn-close-modal').click(function () {
-    window.location.hash = '';
-    window.location.href.replace('#', '');
-    console.log(window.location.href);
-
     clearInterval(repeat);
   });
 });

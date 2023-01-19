@@ -757,7 +757,7 @@ section.abuot {
 }
 .popup_layer {
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 700px;
 }
 
 .pop_img li img {
@@ -822,9 +822,8 @@ section.abuot {
 .pop_img {
   ul {
     position: relative;
-
     li {
-      position: absolute;
+      // position: absolute;
       left: 0px;
       top: 0px;
       float: left;
@@ -851,7 +850,14 @@ section.abuot {
     flex-direction: column;
     flex: 1 1 100%;
     margin: 80px 20px 20px 20px;
+    min-height: initial;
     .pop_img {
+      padding-bottom: calc(50% + 20px);
+      overflow: hidden;
+
+      img {
+        height: inherit;
+      }
     }
     > div {
       flex: 0 0 50%;
