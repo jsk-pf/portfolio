@@ -152,3 +152,4 @@ scrollHeader();
 // $('#lguplus').animatedModal({ modalTarget: 'lguplusModal' });
 // $('#kmiAdmin').animatedModal({ modalTarget: 'kmiAdminModal' });
 // $('#kmiPc').animatedModal({ modalTarget: 'kmiPcModal' });
+// $('#omnicare').animatedModal({ modalTarget: 'omnicareModal' });

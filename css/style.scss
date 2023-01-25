@@ -822,10 +822,17 @@ section.abuot {
 .pop_img {
   ul {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
     li {
       // position: absolute;
-      left: 0px;
-      top: 0px;
+      // left: 0px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       float: left;
     }
   }
@@ -851,8 +858,11 @@ section.abuot {
     flex: 1 1 100%;
     margin: 80px 20px 20px 20px;
     min-height: initial;
+    height: 100%;
+
     .pop_img {
-      padding-bottom: calc(50% + 20px);
+      flex: 1 1 50%;
+      //padding-bottom:calc(50%+20px)height: 100%;
       overflow: hidden;
 
       img {
@@ -894,6 +904,7 @@ section.abuot {
 @media (min-width: 769px) {
   .popup_layer {
     margin: 100px 30px 20px 30px;
+    display: flex;
 
     &:after {
       @include after;
@@ -934,10 +945,10 @@ section.abuot {
 }
 
 @media (min-width: 650px) and (max-width: 768px), (min-width: 1200px) {
-  .pop_img li {
-    left: 50% !important;
-    margin-left: -300px;
-  }
+  // .pop_img li {
+  //   left: 50% !important;
+  //   margin-left: -300px;
+  // }
 }
 
 /*  contact  */
