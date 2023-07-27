@@ -78,7 +78,7 @@ function poftfolioImg() {
   });
 }
 
-1$('.pf_img, .more_btn').click(function (e) {
+$('.pf_img, .more_btn').click(function (e) {
   e.preventDefault();
   let pfTarget = $(this).attr('id');
   $(`#${pfTarget}`).animatedModal({ modalTarget: `${pfTarget}Modal` });
